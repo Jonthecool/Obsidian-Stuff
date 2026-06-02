@@ -14,7 +14,7 @@ related: "[[LSAT Prep Hub]], [[Error Log]], [[Weekly Review]]"
 
 | # | Date | Test Used | Raw LR | Raw RC | Total Raw | Scaled Score | Conditions | Notes |
 |---|------|-----------|--------|--------|-----------|--------------|------------|-------|
-| D | — | Diagnostic | — | — | — | — | Untimed | First cold test |
+| D | 2026-06-02 | PT 123 | 20/50 (-30) | 15/27 (-12) | 35/77 | 142 | Timed | First diagnostic — ran out of time LR S1, speed-guessed last 4 in LR S2, didn't read RC passages 3–4 |
 | 1 | | | | | | | | |
 | 2 | | | | | | | | |
 | 3 | | | | | | | | |
@@ -31,7 +31,7 @@ related: "[[LSAT Prep Hub]], [[Error Log]], [[Weekly Review]]"
 *(Update after each PT)*
 
 ```
-Target: ???
+Target: 170
 PT 8: 
 PT 7: 
 PT 6: 
@@ -40,7 +40,7 @@ PT 4:
 PT 3: 
 PT 2: 
 PT 1: 
-Diag: ???
+Diag: 142 (2026-06-02)
 ```
 
 ---
@@ -48,13 +48,19 @@ Diag: ???
 ## Per-Test Breakdowns
 
 ### Diagnostic
-- **Date:**
-- **Test used:**
-- **Score:**
-- **LR — questions missed:**
-- **RC — questions missed:**
-- **Time pressure?** Yes / No
+- **Date:** June 2, 2026
+- **Test used:** PT 123 (LSAT Demon)
+- **Score:** 142
+- **LR S1:** 10/25 correct (-15), 43% accuracy
+- **LR S2:** 10/25 correct (-15), 43% accuracy — speed-guessed last 4 in final 10 seconds
+- **RC:** 15/27 correct (-12), 68% accuracy on attempted — read only passages 1–2 fully; looked up answers for passage 4, rushed passage 3 in last minute
+- **Time pressure?** Yes — significant across all sections
 - **Key takeaways:**
+  - Core issue: didn't know what questions were asking (comprehension gap)
+  - Getting pulled into close-call traps (choosing by sound vs. logic)
+  - Timing is downstream of comprehension — fix reasoning first
+  - Missed hedging language ("may") that determines logical provability of answer choices
+  - LR is primary battleground: -15 on both sections
 
 ---
 

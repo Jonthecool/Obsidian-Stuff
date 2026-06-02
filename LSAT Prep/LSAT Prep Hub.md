@@ -2,10 +2,10 @@
 created: 2026-05-30
 target_score: 170
 estimated_baseline: 135-160
-current_score: TBD
+current_score: 142
 test_date: 2026-11-11 to 2026-11-14
 sections: Logical Reasoning, Reading Comprehension
-status: just_started
+status: active
 tags:
   - lsat
   - study
@@ -55,12 +55,22 @@ tags:
 
 | Date | Test | Score | LR | RC | Notes |
 |------|------|-------|----|----|-------|
-| — | Diagnostic | — | — | — | Not yet taken |
+| 2026-06-02 | Diagnostic (PT 123) | **142** | 20/50 (-30) | 15/27 (-12) | First timed diagnostic. Timing issues across all sections. Comprehension + close-call traps in LR. RC: only read 2 passages fully. |
+
+### 🏆 High Score Tracker
+
+| Metric | Score | Date |
+|--------|-------|------|
+| Diagnostic | 142 | 2026-06-02 |
+| Personal Best (Practice Test) | — | — |
+| Personal Best (Official LSAT) | — | — |
+
+---
 
 ### Score Goal Milestones
 
-- [ ] Take cold diagnostic test
-- [ ] Set target score after diagnostic
+- [x] Take cold diagnostic test — **142** (June 2, 2026)
+- [x] Set target score after diagnostic — **170**
 - [ ] Reach +5 points above diagnostic
 - [ ] Reach +10 points above diagnostic
 - [ ] Hit target score on a practice test
@@ -171,7 +181,7 @@ Track every question you miss or guess on. Patterns here drive your study priori
 
 | Week | Dates | Sessions | Practice Tests | Key Focus | Notes |
 |------|-------|----------|----------------|-----------|-------|
-| 1 | May 30 – Jun 5 | — | Diagnostic | Foundation | First week |
+| 1 | May 30 – Jun 5 | — | Diagnostic (142) | Foundation | First diagnostic: 142. LR is primary gap (-15 each section). Timing issues throughout. Key skill gap: hedging language in answer choices. |
 
 ---
 
@@ -214,4 +224,4 @@ Likely nearby options (confirm when scheduling opens):
 
 ---
 
-*Last updated: 2026-05-30*
+*Last updated: 2026-06-02*
