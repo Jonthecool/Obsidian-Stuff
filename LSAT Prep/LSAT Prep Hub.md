@@ -64,6 +64,8 @@ tags:
 | Diagnostic | 142 | 2026-06-02 |
 | Personal Best (Practice Test) | — | — |
 | Personal Best (Official LSAT) | — | — |
+| **Estimated Current Score** | **142** | Updated: 2026-06-02 |
+| **Rolling Average (last 3 PTs)** | — | Update after each PT |}
 
 ---
 
@@ -224,4 +226,4 @@ Likely nearby options (confirm when scheduling opens):
 
 ---
 
-*Last updated: 2026-06-02*
+*Last updated: 2026-06-02 | 05:09:06 PM / 17:09:06 EDT*

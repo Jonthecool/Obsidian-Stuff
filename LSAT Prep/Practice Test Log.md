@@ -8,6 +8,8 @@ related: "[[LSAT Prep Hub]], [[Error Log]], [[Weekly Review]]"
 > Every PT is data. Log everything — raw score, scaled score, timing, and what broke down.
 > Back to [[LSAT Prep Hub]]
 
+*Last updated: 2026-06-02 | 05:09:06 PM / 17:09:06 EDT*
+
 ---
 
 ## Score Summary
