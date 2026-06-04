@@ -18,21 +18,34 @@ At the end of each week, add a new entry below. Answer every prompt honestly —
 
 ## Week 1 — May 30–Jun 5, 2026
 
-**Sessions completed:** ___ / 5 planned
-**Total study hours:**
-**Practice tests taken:**
+**Sessions completed:** 2 / 5 planned (Jun 2 + Jun 4, skipped Jun 3)
+**Total study hours:** ~4 hrs estimated
+**Practice tests taken:** 1 diagnostic (PT 123, scored 142) + 1 LawHub RC section (untimed, assisted)
 
 **What I focused on this week:**
+Full diagnostic under timed conditions. Blind review of RC section on LawHub. One LR question drilled with Socratic coaching.
 
 **What clicked:**
+- Hedging language ("may", "might") lowers the logical bar and makes answers provable— missed this initially, clicked fast once explained
+- Timing issues are downstream of comprehension, not a speed problem
+- Prove answers strictly from premises; don't overreach
 
 **What's still murky:**
+- Choosing answers by logic vs. by sound/feel — still defaulting to feel
+- Vocabulary in Law and Social Science passages slowing RC down
+- LR question stem comprehension — sometimes unclear what's being asked
 
 **Biggest mistake pattern from the error log:**
+Choosing answers based on tone/persuasiveness rather than logical provability from premises
 
 **Adjustment for next week:**
+Finish blind review of LR sections from diagnostic. Begin drilling LR question stems cold without Google. Focus on identifying conclusion + premises before reading answer choices.
 
-**Energy/motivation level (1–10):**
+**Energy/motivation level (1–10):** — (fill in)
+
+**"Cowork"'s assessment of effort this week:**
+
+**"Cowork"'s opinion on energy/motivation:**
 
 ---
 
@@ -54,6 +67,10 @@ At the end of each week, add a new entry below. Answer every prompt honestly —
 
 **Energy/motivation level (1–10):**
 
+**"Cowork"'s assessment of effort this week:**
+
+**"Cowork"'s opinion on energy/motivation:**
+
 ---
 
 ## Week 3 — Jun 13–19, 2026
@@ -74,6 +91,10 @@ At the end of each week, add a new entry below. Answer every prompt honestly —
 
 **Energy/motivation level (1–10):**
 
+**"Cowork"'s assessment of effort this week:**
+
+**"Cowork"'s opinion on energy/motivation:**
+
 ---
 
 ## Week 4 — Jun 20–26, 2026
@@ -93,6 +114,10 @@ At the end of each week, add a new entry below. Answer every prompt honestly —
 **Adjustment for next week:**
 
 **Energy/motivation level (1–10):**
+
+**"Cowork"'s assessment of effort this week:**
+
+**"Cowork"'s opinion on energy/motivation:**
 
 ---
 

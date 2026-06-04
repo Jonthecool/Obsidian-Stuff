@@ -124,3 +124,27 @@ Use official LSAC tests. Suggested order (save recent tests for final prep):
 - [[Error Log]] — detailed tracking of every missed question
 - [[Weekly Review]] — weekly synthesis of PT progress
 - [[LSAT Prep Hub]]
+
+---
+
+### Blind Review Session 1 — RC (June 4, 2026)
+- **Date:** June 4, 2026
+- **Source:** LawHub Advantage — PT 123, Section 4 (same test as diagnostic)
+- **Session type:** Blind Review (untimed)
+- **RC Score:** 19/26 (73%) | Original timed: 15/27 (56%)
+- **Time taken:** 1h 56m 40s (untimed)
+- **Breakdown by passage type:**
+  - Law passages (Q1–6): 5/6 — missed Q4
+  - Humanities passages (Q7–13): 6/7 — missed Q8
+  - Science passages (Q14–20): 6/7 — missed Q26 area
+  - Social science passages (Q21–26): 2/6 — missed Q21, Q22, Q25, Q26
+- **Notable timing flags:**
+  - Q1: 22m 34s (passage 1 read time — normal)
+  - Q7: 13m 13s (passage 2 read time — normal)
+  - Q21: 10m 25s (single question — red flag even untimed; genuine difficulty)
+- **Key takeaways:**
+  - Social science passages are the clear weak spot — 4 of 7 total misses here
+  - Timed vs blind review gap (56% → 73%) = pacing/pressure issue, not comprehension
+  - Word-matching strategy self-invented during diagnostic — useful shortcut for comparative questions, unreliable on harder questions where LSAT mirrors wrong answer wording deliberately
+  - Used Google/dictionary during session — appropriate at this stage, needs to be weaned by August
+  - Day 3 of structured LawHub practice (preceded by research/orientation phase)

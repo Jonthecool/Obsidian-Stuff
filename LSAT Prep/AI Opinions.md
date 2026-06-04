@@ -1,0 +1,57 @@
+---
+tags: [lsat, ai, cowork, opinions]
+related: "[[LSAT Prep Hub]], [[Practice Test Log]], [[Weekly Review]]"
+---
+
+# AI Opinions
+
+> Honest, unfiltered takes from **Cowork** on Jon's LSAT prep. These are opinions, not instructions — take them as a second perspective, not gospel.
+> Back to [[LSAT Prep Hub]]
+
+---
+
+## 2026-06-04 | 05:52:37 PM / 17:52:37 EDT "Cowork"
+
+
+### On the 142 diagnostic
+The number isn't the story. The fact that Jon went cold into a full timed test on day 3 instead of avoiding it is. Most people rationalize delaying the diagnostic for weeks because they're scared of a low number. Jon just did it. That behavioral trait — confronting uncomfortable data instead of avoiding it — is more predictive of a high score than raw aptitude.
+
+### On the reasoning quality so far
+The electric car question is a useful case study. Jon got the right answer but for the wrong reason, then self-identified that something felt off about his process before I pointed it out. That's rare. Most students at this stage are confident in wrong answers. The fact that Jon is already suspicious of his own reasoning — even when he's right — suggests the ceiling is higher than the 142 suggests.
+
+### On the Google/dictionary use
+I'm not concerned about it morally. I'm concerned about it practically. The LSAT is a vocabulary-tolerant test by design — you're not supposed to need a dictionary. If Jon is reaching for one, it means he's reading for word-level meaning instead of argument structure. That's a fixable habit, but it needs to be broken deliberately, not gradually.
+
+### On the timing issue
+Two hours for one untimed RC section is a signal worth paying attention to. It's not slow reading — it's uncertain reading. When you're confident in your understanding of a passage, you move. When you're not, you hover. The time pressure problem will solve itself once the comprehension becomes automatic. Drilling speed before that happens is counterproductive.
+
+### On the 170 target
+I think it's reachable. I wouldn't say that to everyone. The self-awareness, the early structure, and the quick uptake on new concepts are the three traits that separate students who make big score jumps from ones who plateau. The main risk I see isn't ability — it's consistency. Five months is enough time, but only if the work is relatively continuous. One bad month in July or August would hurt more than it would for a student who started further ahead.
+
+### On overall approach
+The Obsidian system, the logging, the blind review — this is the right infrastructure. Most students at 142 are still Googling "how to study for the LSAT." Jon is already doing the things that coaches recommend to students scoring in the 150s. That gap between habits and current score is where the fastest improvement lives.
+
+---
+
+*Cowork opinions are updated periodically as new data comes in. Last updated: 2026-06-04 | 05:52:37 PM / 17:52:37 EDT*
+
+---
+
+## 2026-06-04 | "Chat"
+
+### On the blind review gap
+19/26 on RC blind review vs 15/27 timed is the most useful data point so far. A 17-point accuracy jump with unlimited time means the comprehension is there — the problem is purely pacing and pressure. That's actually the easier problem to fix. You don't need to get smarter, you need to get faster, and speed follows naturally from reps. The ceiling this reveals is higher than the 142 suggests.
+
+### On the social science passage weakness
+Four of seven misses in one passage type is a pattern, not a coincidence. Social science passages on the LSAT tend to involve abstract theoretical arguments about society, policy, or human behavior — dense with hedging language and competing perspectives. The fix isn't to read more carefully, it's to map the passage structure before diving into questions. RC — Passage Strategies already covers this. Apply it specifically to social science passages first.
+
+### On the word-matching strategy
+Independently inventing a test-taking shortcut on a cold diagnostic with no training is a good sign. It shows strategic thinking under pressure. The risk is over-relying on it — the LSAT deliberately places passage vocabulary into wrong answer choices as traps. Use it as a first-pass filter, not a final answer method. As formal RC skills develop through Jack's book and LawHub drilling, this instinct will become more refined naturally.
+
+### On overall progress at day 3
+The research-before-reps approach was smart. Coming into LawHub already understanding blind review, question types, and pacing strategy means the first real practice sessions are higher quality than they would have been otherwise. Most people at 142 are still in the "what even is the LSAT" phase three days in. The infrastructure, the mindset, and the honest self-assessment are all ahead of where the score currently sits. That gap closes fast with consistent work.
+
+### On the realistic score range
+Conservative estimate: 158–163 by November. Stretch: 165+. The floor assuming consistent but imperfect prep given the semester load: 155. The single biggest variable between those outcomes isn't ability — it's whether summer prep is used well before the semester competes for attention. June and July are the highest-leverage months in this entire timeline.
+
+*Chat opinions added: 2026-06-04*

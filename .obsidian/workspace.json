@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "LSAT Prep/Error Log.md",
+                "file": "LSAT Prep/Weekly Review.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Error Log"
+              "title": "Weekly Review"
             }
           },
           {
@@ -108,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "LSAT Prep/Error Log.md",
+                "file": "LSAT Prep/Weekly Review.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +118,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Error Log"
+              "title": "Backlinks for Weekly Review"
             }
           },
           {
@@ -198,18 +198,19 @@
   },
   "active": "2b89b998ba70cb44",
   "lastOpenFiles": [
+    "LSAT Prep/Update Log.md",
+    "LSAT Prep/Weekly Review.md",
+    "LSAT Prep/LR - Common Flaws.md",
+    "LSAT Prep/AI Opinions.md",
+    "LSAT Prep/Error Log.md",
     "LSAT Prep/LR - Argument Structure.md",
+    "LSAT Prep/LR - Conditional Logic.md",
     "LSAT Prep/LR - Question Types.md",
     "LSAT Prep/LSAT Prep Hub.md",
-    "LSAT Prep/Update Log.md",
     "LSAT Prep/RC - Question Types.md",
-    "LSAT Prep/Weekly Review.md",
     "LSAT Prep/Test Day Checklist.md",
     "LSAT Prep/Practice Test Log.md",
-    "LSAT Prep/LR - Conditional Logic.md",
-    "LSAT Prep/LR - Common Flaws.md",
     "LSAT Prep/Daily Question Log.md",
-    "LSAT Prep/Error Log.md",
     "LSAT Prep/RC - Passage Strategies.md",
     "Claude/Supplement Routine.md",
     "LSAT Prep",
