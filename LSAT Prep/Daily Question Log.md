@@ -30,7 +30,8 @@ related: "[[LSAT Prep Hub]], [[Error Log]]"
 
 | Date | Section | Question Type | Correct Answer | Your Answer | Result | Notes |
 |------|---------|--------------|----------------|-------------|--------|-------|
-| | | | | | | |
+| 2026-06-02 | LR | Conclusion Completion | A | A | ✅ Correct | Got right answer but wrong reason — chose by tone, not logic. Missed the role of "may" as a hedging softener. |
+| 2026-06-04 | RC (LawHub, untimed) | Mixed | 19/26 | — | 73% | Used Google for vocab help — not a clean score. Science passages perfect (7/7). Social science weakest (2/6). |
 
 ---
 
