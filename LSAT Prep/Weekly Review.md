@@ -20,7 +20,7 @@ At the end of each week, add a new entry below. Answer every prompt honestly —
 
 **Sessions completed:** 2 / 5 planned (Jun 2 + Jun 4, skipped Jun 3)
 **Total study hours:** ~4 hrs estimated
-**Practice tests taken:** 1 diagnostic (PT 123, scored 142) + 1 LawHub RC section (untimed, assisted)
+**Practice tests taken:** 1 diagnostic (PT 123, scored 142) + RC blind review 19/26 (untimed, assisted) + LR S2 blind review 17/25 (untimed, assisted)
 
 **What I focused on this week:**
 Full diagnostic under timed conditions. Blind review of RC section on LawHub. One LR question drilled with Socratic coaching.
@@ -43,9 +43,9 @@ Finish blind review of LR sections from diagnostic. Begin drilling LR question s
 
 **Energy/motivation level (1–10):** — (fill in)
 
-**"Cowork"'s assessment of effort this week:**
+**"Cowork"'s assessment of effort this week:** Solid for a first real week. Diagnostic on June 2, blind review session on June 4 covering RC and LR S2. Skipped June 3. Volume is appropriate for early-stage prep — not overloading, not coasting.
 
-**"Cowork"'s opinion on energy/motivation:**
+**"Cowork"'s opinion on energy/motivation:** Engaged but inconsistent. The willingness to sit through nearly 3 hours of blind review is real commitment. The Google AI crutch is the tell — it suggests discomfort with uncertainty that Jon hasn't fully pushed through yet. The energy is there; the confidence to trust his own reasoning under pressure is still developing.
 
 ---
 

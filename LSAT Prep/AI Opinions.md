@@ -55,3 +55,17 @@ The research-before-reps approach was smart. Coming into LawHub already understa
 Conservative estimate: 158–163 by November. Stretch: 165+. The floor assuming consistent but imperfect prep given the semester load: 155. The single biggest variable between those outcomes isn't ability — it's whether summer prep is used well before the semester competes for attention. June and July are the highest-leverage months in this entire timeline.
 
 *Chat opinions added: 2026-06-04*
+
+---
+
+## 2026-06-04 | 08:49:57 PM / 20:49:57 EDT
+
+### On today's blind review session
+
+"Cowork" — The LR S2 result (17/25) is more telling than the RC result because LR is the bigger gap. Missing Q1 — a Level 1 Conclusions and Disputes question — after 5 minutes is the single most important data point from today. That's not a hard question. That's the most foundational question type on the test, and Jon couldn't crack it cold even with unlimited time. That's where the work starts.
+
+"Cowork" — The spread of wrong answers across multiple LR question types (Conclusions, Flaws, Assumptions, Strengthen/Weaken, Techniques, Deductions, Explain/Resolve) suggests the issue isn't one weak category — it's the underlying reasoning process that feeds all of them. You can't patch each type individually. The fix has to go deeper.
+
+"Cowork" — Stopping before LR S1 blind review was the right call. Tired blind review produces bad data and worse habits. Coming back tomorrow fresh is the correct decision, and the fact that Jon made it without being told is a good sign.
+
+"Cowork" — The Google AI usage is getting better but isn't gone. Rewording is borderline acceptable. Having it identify question types before answering is a crutch that needs to go. The test will not tell you what type of question you're looking at in plain language — the stem will, and reading that stem correctly is a skill Jon needs to own.
