@@ -69,3 +69,25 @@ Conservative estimate: 158–163 by November. Stretch: 165+. The floor assuming 
 "Cowork" — Stopping before LR S1 blind review was the right call. Tired blind review produces bad data and worse habits. Coming back tomorrow fresh is the correct decision, and the fact that Jon made it without being told is a good sign.
 
 "Cowork" — The Google AI usage is getting better but isn't gone. Rewording is borderline acceptable. Having it identify question types before answering is a crutch that needs to go. The test will not tell you what type of question you're looking at in plain language — the stem will, and reading that stem correctly is a skill Jon needs to own.
+
+
+---
+
+## 2026-06-04 (Evening) | Chat
+
+### On LR 1 blind review
+17/25 with question types partially telegraphed by Gemini means the real number is probably 55-60% unaided. Still — going from 43% timed to even an asterisked 68% untimed on day 3 with zero formal LR training shows the comprehension is there beneath the surface. The back half collapse (Q20-25) is a difficulty curve and fatigue issue, not a knowledge ceiling. That gets fixed with reps and stamina building, not more conceptual study.
+
+### On Techniques, Roles and Principles
+Missing this question type three times in one section is the clearest signal from today. This question type asks you to identify what role a statement plays in an argument or what technique the author is using — it requires you to zoom out and see the argument's structure rather than its content. That's a meta-reasoning skill that Stage 1 of Jack's book will directly build. This should be the first question type drilled deliberately once the foundation is in place.
+
+### On the Gemini usage
+The confession was voluntary and honest, which matters. The usage itself was a gray area — using AI as a thinking prompt is legitimate, having question types volunteered changes the cognitive task. The important thing is Jon already knows the next section needs to be clean. The self-awareness around study integrity at this stage is actually a good sign for how he'll approach the harder grind ahead.
+
+### On stopping for the night
+Right call. Two blind review sessions, a doctor's appointment, and a full day of conversation on a 4-5 hour sleep night is enough. LR 2 and RC 2 being deferred due to memory contamination risk is honest and correct. The data collected today — RC 1 at 73%, LR 1 at 68% asterisked — is sufficient to confirm weak spots and move forward. More data from compromised sessions would just add noise.
+
+### On the full day picture
+This was a productive day by any reasonable measure. The question types that need drilling are now identified. The gap between timed and untimed performance is mapped. The honest accounting of assistance used shows someone who isn't gaming their own metrics. That last part matters more than the scores.
+
+*Chat opinions added: 2026-06-04 (Evening)*

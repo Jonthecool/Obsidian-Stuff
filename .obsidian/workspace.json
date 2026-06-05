@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "LSAT Prep/Weekly Review.md",
+                "file": "LSAT Prep/AI Opinions.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Weekly Review"
+              "title": "AI Opinions"
             }
           },
           {
@@ -108,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "LSAT Prep/Weekly Review.md",
+                "file": "LSAT Prep/AI Opinions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +118,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Weekly Review"
+              "title": "Backlinks for AI Opinions"
             }
           },
           {
@@ -198,8 +198,8 @@
   },
   "active": "2b89b998ba70cb44",
   "lastOpenFiles": [
-    "LSAT Prep/Update Log.md",
     "LSAT Prep/Weekly Review.md",
+    "LSAT Prep/Update Log.md",
     "LSAT Prep/LR - Common Flaws.md",
     "LSAT Prep/AI Opinions.md",
     "LSAT Prep/Error Log.md",

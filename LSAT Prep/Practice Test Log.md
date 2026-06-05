@@ -148,3 +148,30 @@ Use official LSAC tests. Suggested order (save recent tests for final prep):
   - Word-matching strategy self-invented during diagnostic — useful shortcut for comparative questions, unreliable on harder questions where LSAT mirrors wrong answer wording deliberately
   - Used Google/dictionary during session — appropriate at this stage, needs to be weaned by August
   - Day 3 of structured LawHub practice (preceded by research/orientation phase)
+
+---
+
+### Blind Review Session 2 — LR 1 (June 4, 2026)
+- **Date:** June 4, 2026
+- **Source:** LawHub Advantage — PT 123, Section 2
+- **Session type:** Blind Review (untimed)
+- **LR Score:** 17/25 (68%) | Original timed: 10/25 (43% / 40%)
+- **Time taken:** 1h 4m 7s (untimed)
+- **Assistance note:** Google Gemini used as thinking prompt — asked not to reveal answers but volunteered question type labels unprompted. Scores carry a mild asterisk; true unaided LR blind review estimated at 55-60%
+- **Questions missed:** Q1, Q11, Q14, Q20, Q21, Q22, Q24, Q25
+- **Breakdown by question type missed:**
+  - Conclusions and Disputes: Q1 (Level 1) — missed an easy one, likely settling-in issue
+  - Techniques, Roles and Principles: Q11 (Level 2)
+  - Strengthen or Weaken: Q14 (Level 2)
+  - Techniques, Roles and Principles: Q20 (Level 2)
+  - Flaws: Q21 (Level 3)
+  - Deductions and Inference: Q22 (Level 3)
+  - Techniques, Roles and Principles: Q24 (Level 2)
+  - Explain or Resolve: Q25 (Level 3)
+- **Pattern:** Back half of section (Q20-25) is where most points bled — fatigue/difficulty curve issue. Techniques, Roles and Principles missed 3 times — clearest weak question type so far
+- **Key takeaways:**
+  - 43% timed → 68% untimed = gap split between knowledge gaps and time pressure roughly equally
+  - Techniques, Roles and Principles is the priority question type to drill
+  - Q8 answered correctly in 23s on a Level 3 — confident fast answer on hard question is a good sign
+  - Memory contamination risk noted — may remember LR 2 and RC 2 content from diagnostic, decision made to skip remaining sections or wait 2-3 weeks before blind reviewing them
+  - RC 2 and LR 2 blind review deferred — existing data sufficient to identify weak spots
