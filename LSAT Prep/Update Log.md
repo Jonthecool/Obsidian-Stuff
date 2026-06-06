@@ -26,3 +26,4 @@ related: "[[LSAT Prep Hub]]"
 | 11 | 2026-06-06 | 12:00:00 AM | 00:00:00 | EDT | [[Weekly Review]], [[AI Opinions]] | Automated Saturday midnight review — Week 1 (May 30–Jun 5) confirmed complete. Cowork fields already filled on Jun 4; no new activity Jun 5 changed the assessment. Added Week 1 recap entry to AI Opinions. |
 | 11 | 2026-06-06 | 12:46:06 PM | 12:46:06 | EDT | [[Error Log]] | Populated full diagnostic error log — 30 LR misses by question type, RC timing misses, pattern analysis, Month 1 summary |
 | 12 | 2026-06-06 | 12:46:06 PM | 12:46:06 | EDT | [[AI Opinions]] | Added June 6 entry — "Cowork" on Flaw question priority, RC timing data, LR S1 blind review decision |
+| 13 | 2026-06-06 | 01:05:30 PM | 13:05:30 | EDT | [[Book Tips]] | Created note — unique tips extracted from all 3 books: LSATwithJack, The Loophole (Cassidy), The LSAT Trainer (Kim) |
