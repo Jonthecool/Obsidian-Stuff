@@ -28,3 +28,4 @@ related: "[[LSAT Prep Hub]]"
 | 14 | 2026-06-06 | 01:05:30 PM | 13:05:30 | EDT | [[Book Tips]] | Created note — unique tips extracted from all 3 books: LSATwithJack, The Loophole, The LSAT Trainer |
 | 15 | 2026-06-06 | — | — | EDT | [[Practice Test Log]] | Added BR Session 1 RC (19/26), BR Session 2 LR 1 (17/25), full diagnostic question type breakdown, LR 1 diagnostic vs blind review comparison |
 | 16 | 2026-06-06 | — | — | EDT | [[AI Opinions]] | Added Chat entries (Jun 4 morning, Jun 4 evening, Jun 6) — blind review gap, Techniques/Roles/Principles gap, Flaw speed issue, priority drill list |
+| 17 | 2026-06-06 | — | — | EDT | [[Law School Goals]] | Created note — school list with dream/reach/likely tiers, full admissions stats for all schools, honest assessment by LSAT score range |
