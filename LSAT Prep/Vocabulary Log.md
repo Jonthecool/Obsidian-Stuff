@@ -71,41 +71,200 @@ When you hit a word that slows you down or forces a Google search:
 | **propagate** | to spread or promote widely | "The myth was propagated by early historians and never corrected." |
 | **promulgate** | to make a law or rule officially known | "The agency promulgated new safety standards in 2022." |
 
-## PREV_SECTION_PLACEHOLDER
+## DESCRIBING ARGUMENTS & CLAIMS ★★★
+*(Adjectives/adverbs that show HOW a claim is being made — critical for LR)*
 
-| Word | Plain Definition | LSAT-Context Example | Source |
-|------|-----------------|----------------------|--------|
-| *proponent* | someone who argues in favor of something | "Critics of the policy disagree with its proponents about the environmental impact." | LR - Electric Car Q (Jun 2) |
-| *contend* | to argue or claim | "The author contends that early mammals were primarily nocturnal." | RC general |
-| *refute* | to prove wrong / disprove | "The new fossil evidence refutes the prevailing theory about dinosaur migration." | RC Science passages |
-| *premise* | a foundational assumption or stated reason | "The argument's premise — that voters are rational — is never defended." | LR general |
-| *corroborate* | to support or confirm | "The second study corroborates the findings of the first." | RC Science passages |
-| *enumerate* | to list one by one | "The statute enumerates five conditions for eligibility." | RC Law passages |
-| *promulgate* | to make a rule/law officially known | "The agency promulgated new regulations in 2019." | RC Law passages |
-| *jurisprudence* | the theory or philosophy of law | "Tort jurisprudence evolved significantly after the Industrial Revolution." | RC Law passages |
-| *precedent* | a prior case or event used as a guide | "The ruling set a precedent that lower courts must follow." | RC Law passages |
-| *seminal* | highly influential / original | "Darwin's work is considered seminal in evolutionary biology." | RC Science/History passages |
+| Word | Plain Definition | LSAT-Context Usage |
+|------|-----------------|-------------------|
+| **plausible** ★ | believable, even if not proven | "The explanation is plausible but unsupported by direct evidence." |
+| **implausible** | hard to believe given the evidence | "The conclusion seems implausible given the study's small sample." |
+| **specious** | seems logical but is actually wrong | "The specious reasoning in answer choice B sounds valid on first read." |
+| **spurious** | fake or falsely attributed; not genuine | "The correlation was spurious — caused by a third variable." |
+| **fallacious** | containing a logical error | "The argument is fallacious because it confuses correlation with causation." |
+| **cogent** | clear, logical, and convincing | "A cogent argument states its premises clearly and the logic is tight." |
+| **tenable** | capable of being defended | "The position is only tenable if we accept the unstated assumption." |
+| **untenable** | impossible to defend | "Once the key premise is removed, the conclusion becomes untenable." |
+| **analogous** ★ | comparable in relevant ways | "The author's argument is analogous to claiming that all swans are white." |
+| **ostensibly** | apparently or seemingly, but perhaps not really | "Ostensibly, the policy protects consumers; in practice, it benefits corporations." |
+| **purportedly** | claimed to be true, often with implied doubt | "The study, purportedly peer-reviewed, was never independently replicated." |
+| **tacit** | understood without being stated | "The argument rests on the tacit assumption that voters are fully informed." |
+| **overt** | done openly, not hidden | "The author's bias is overt — she explicitly advocates for one side." |
+| **covert** | done secretly | "The company's covert lobbying contradicts its public statements." |
+| **implicit** ★ | suggested but not directly stated | "The implicit assumption is that higher wages lead to lower productivity." |
+| **explicit** ★ | clearly stated, leaving nothing implied | "The conclusion is explicit — the author states it in the final sentence." |
+| **equivocal** | having multiple possible meanings | "The witness's equivocal testimony failed to clearly support either side." |
+| **unequivocal** | leaving no doubt; clear | "The study's results were unequivocal: the drug reduces mortality." |
+| **ambiguous** ★ | open to more than one interpretation | "The term 'moderate increase' is ambiguous without a defined baseline." |
+| **nuanced** | showing subtle distinctions and complexity | "The author's position is nuanced — she neither fully endorses nor rejects the theory." |
+| **categorical** | absolute; without exception | "A categorical claim — 'all X are Y' — is easier to disprove than a qualified one." |
+| **qualified** ★ | limited by conditions or exceptions | "A qualified conclusion is harder to attack than an absolute one." |
+| **unqualified** | absolute; without any limiting conditions | "The author makes the unqualified claim that no exceptions exist." |
+| **contingent** | depending on something else being true | "The policy's success is contingent on full compliance by all parties." |
+| **inherent** ★ | existing as a permanent, essential quality | "The risk is inherent in the process and cannot be engineered away." |
+| **intrinsic** | belonging to the essential nature of something | "The argument assumes intrinsic value in preserving biodiversity." |
+| **extrinsic** | external; coming from outside | "Critics argue the incentives are extrinsic and don't build lasting habits." |
+| **peripheral** | less important; on the edge of what matters | "The point about cost is peripheral to the author's main argument." |
+| **tangential** | only slightly related | "The second paragraph is tangential — it doesn't support the conclusion." |
+| **germane** | relevant and applicable | "Only evidence germane to the stated conclusion should be considered." |
+| **salient** | most noticeable or important | "The most salient flaw is the author's reliance on a single anecdotal case." |
+| **ancillary** | providing support; secondary to the main thing | "The data serves an ancillary role — it's not the primary support." |
+| **superfluous** | unnecessary; more than needed | "The third premise is superfluous — removing it doesn't weaken the argument." |
+| **extraneous** | irrelevant; coming from outside the matter | "Extraneous information is designed to distract you from the core argument." |
+| **perfunctory** | done with minimal care or effort | "The review was perfunctory — it addressed none of the study's core claims." |
+| **cursory** | quick and without attention to detail | "A cursory reading misses the conditional in the second sentence." |
+| **tendentious** | promoting a particular point of view; biased | "The tendentious language in the passage signals the author's strong advocacy." |
+| **convoluted** | extremely complex and difficult to follow | "The convoluted argument conceals a simple flaw at its core." |
+| **circular** ★ | an argument that uses the conclusion as its own support | "The reasoning is circular — it assumes what it claims to prove." |
+| **paradoxical** | seemingly contradictory but possibly true | "It is paradoxical that increasing wages can sometimes reduce employment." |
+| **incongruous** | not in harmony; out of place | "The author's optimistic conclusion seems incongruous with her own data." |
 
 ---
 
-## Vocabulary by Category
+## LOGIC & INFERENCE ★★★
 
-### Law & Legal (RC Law passages)
-- jurisprudence, precedent, promulgate, enumerate, statute, tort, adjudicate, litigate
+| Word | Plain Definition | LSAT-Context Usage |
+|------|-----------------|-------------------|
+| **inductive** | reasoning from specific cases to a general rule | "Inductive reasoning is probabilistic — it can never guarantee the conclusion." |
+| **deductive** | reasoning from a general rule to a specific conclusion | "Deductive arguments, if valid, make the conclusion certain given the premises." |
+| **syllogism** | a formal logical argument with two premises and a conclusion | "All lawyers argue. She argues. Therefore she's a lawyer — a classic flawed syllogism." |
+| **contrapositive** ★ | the logically equivalent flip of a conditional: if A→B, then not-B→not-A | "The contrapositive of 'all birds have wings' is 'no wingless creature is a bird.'" |
+| **hypothesis** ★ | a proposed explanation to be tested | "The hypothesis that caffeine improves memory remains unproven." |
+| **criteria** ★ | the standards by which something is judged (plural of criterion) | "The selection criteria were never publicly disclosed." |
+| **criterion** | a single standard for judging | "The only criterion for inclusion was income below the federal poverty line." |
+| **methodology** | the system of methods used in an area of study | "The study's methodology is questionable — it relied solely on self-reporting." |
+| **correlation** ★ | a mutual relationship between two variables (NOT causation) | "There is a correlation between shoe size and reading ability — caused by age, not intelligence." |
+| **causation** ★ | one thing directly causing another | "The argument jumps from correlation to causation without establishing mechanism." |
+| **causality** | the relationship between cause and effect | "Establishing causality requires ruling out all other possible explanations." |
+| **confounding** | a hidden variable that distorts the apparent relationship | "Age is a confounding variable — it explains the correlation without implying causation." |
+| **anomaly** | something that deviates from what is expected | "The exception is not an anomaly — it reveals a flaw in the general rule." |
+| **anomalous** | deviating from the normal; unusual | "The anomalous result was dismissed without adequate explanation." |
+| **counterfactual** | considering what would have happened under different circumstances | "The counterfactual — what if the law had not been passed — is never addressed." |
+| **tautology** | a statement true by definition; a circular argument | "Saying 'bachelors are unmarried men' is a tautology, not an insight." |
+| **equivocation** ★ | using a word with two different meanings to make an argument appear valid | "The equivocation on 'right' — legal vs. moral — is the core flaw." |
+| **replication** | repeating a study to verify its results | "Without replication by independent teams, the findings remain preliminary." |
+| **empirical** ★ | based on observation and experiment, not theory | "Empirical evidence, not intuition, should guide policy decisions." |
+| **quantitative** | relating to measurement and numbers | "The study used quantitative data — test scores and income levels." |
+| **qualitative** | relating to the nature or quality of something, not numbers | "Qualitative interviews revealed experiences the statistics couldn't capture." |
+| **anecdotal** | based on personal accounts rather than systematic evidence | "Anecdotal evidence is insufficient to establish a general pattern." |
+| **extrapolation** | extending conclusions beyond the original data range | "The extrapolation from laboratory mice to humans may not be valid." |
 
-### Science & Biology
-- corroborate, refute, hypothesis, empirical, extrapolate, infer, taxonomy
+---
 
-### Argument Structure (LR)
-- premise, contend, assert, conclude, infer, rebut, concede, qualify
+## DESCRIBING CHANGE & SCALE ★★
 
-### Dense/Abstract (Social Science)
-- paradigm, normative, epistemology, ontological, hegemony, posit
+| Word | Plain Definition | LSAT-Context Usage |
+|------|-----------------|-------------------|
+| **nascent** | just beginning to develop | "The nascent technology shows promise but lacks real-world testing." |
+| **incipient** | beginning to happen; in early stages | "Incipient resistance to the antibiotic was detected within months." |
+| **burgeoning** | growing or developing rapidly | "The burgeoning social media industry challenged existing media law." |
+| **ephemeral** | lasting for a very short time | "The policy's benefits proved ephemeral — they disappeared within a year." |
+| **transient** | passing quickly; temporary | "Economic booms are often transient without structural reforms." |
+| **perennial** | occurring repeatedly; lasting many years | "The perennial debate over copyright duration has never been fully resolved." |
+| **pervasive** | spreading widely throughout | "Pervasive bias in the data collection undermines every conclusion drawn from it." |
+| **ubiquitous** | present everywhere | "Smartphones have become ubiquitous in developed economies." |
+| **endemic** | regularly found in a specific area or group | "Corruption was endemic to the region's political institutions." |
+| **immutable** | unchanging over time | "The author treats the law of supply and demand as immutable, ignoring exceptions." |
+| **malleable** | able to be influenced or changed | "Public opinion is malleable — it shifts with media framing." |
+| **disproportionate** ★ | larger or smaller than expected relative to something else | "The punishment is disproportionate to the offense." |
+
+---
+
+## LAW & GOVERNANCE ★★
+
+| Word | Plain Definition | LSAT-Context Usage |
+|------|-----------------|-------------------|
+| **jurisdiction** | the authority to apply law in a specific area | "The federal court lacks jurisdiction over purely state matters." |
+| **precedent** ★ | a prior court decision that guides future cases | "The ruling set a precedent that all lower courts are bound to follow." |
+| **statute** | a written law passed by a legislature | "The statute explicitly prohibits discrimination on the basis of origin." |
+| **statutory** | relating to or created by statute | "Statutory damages apply even when actual harm cannot be proven." |
+| **legislature** | the law-making body of a government | "The legislature failed to define 'reasonable care' in the new act." |
+| **legislative** | relating to making laws | "The legislative intent behind the act was to protect small businesses." |
+| **judiciary** | the court system | "An independent judiciary is essential to the rule of law." |
+| **adjudicate** | to make a legal judgment or settle a dispute | "The commission was empowered to adjudicate disputes between parties." |
+| **arbitrate** | to settle a dispute outside of court | "The contract required parties to arbitrate rather than litigate." |
+| **litigate** | to resolve a dispute through formal legal proceedings | "The company chose to litigate rather than settle out of court." |
+| **litigation** | the process of taking legal action | "Litigation costs deterred many plaintiffs from pursuing valid claims." |
+| **enumerate** | to list one by one | "The bill enumerates seven conditions under which the right applies." |
+| **codify** | to arrange laws into a systematic code | "The common law principle was eventually codified in statute." |
+| **ratify** | to formally approve and give legal force to | "The treaty was ratified by two-thirds of member states." |
+| **mandate** | an official order or requirement | "The mandate requires all employers to provide paid sick leave." |
+| **sanction** | (1) official approval, or (2) a penalty for noncompliance | "The agency can sanction violators with fines up to $10,000." |
+| **sovereignty** | supreme authority, especially of a state | "Indigenous communities claim sovereignty over ancestral land." |
+| **prerogative** | an exclusive right or privilege | "Setting monetary policy is the central bank's prerogative." |
+| **prohibition** ★ | an official ban | "The prohibition on hearsay evidence has several recognized exceptions." |
+| **pejorative** | expressing contempt or disapproval | "The term carries pejorative connotations that bias the debate." |
+| **repudiate** | to reject or refuse to accept | "The administration repudiated the treaty negotiated by its predecessor." |
+| **coerce** | to force someone to do something by threat | "Consent obtained under coercion is not valid consent." |
+| **coercion** | the use of force or threats to compel action | "The contract was voided because it was signed under coercion." |
+| **jurisprudence** | the theory or philosophy of law | "Tort jurisprudence evolved significantly after the Industrial Revolution." |
+
+---
+
+## PHILOSOPHY, ETHICS & SOCIAL SCIENCE ★★
+
+| Word | Plain Definition | LSAT-Context Usage |
+|------|-----------------|-------------------|
+| **normative** | relating to what ought to be; about values and standards | "The argument conflates normative claims (what should happen) with factual claims." |
+| **prescriptive** | stating what should be done | "A prescriptive claim tells us what ought to happen; a descriptive one tells us what does." |
+| **descriptive** | describing what actually is, without judgment | "The study is purely descriptive — it identifies patterns without recommending action." |
+| **autonomy** ★ | the right or ability to make one's own decisions | "The policy infringes on patient autonomy by requiring physician approval." |
+| **paternalism** | restricting freedom for someone's 'own good' | "Critics argue the ban is paternalism — the state should not dictate personal choices." |
+| **utilitarian** | concerned with producing the greatest good for the greatest number | "From a utilitarian standpoint, the policy is justified by its aggregate benefits." |
+| **pragmatic** | dealing with things practically rather than theoretically | "The pragmatic approach prioritizes what works over ideological consistency." |
+| **altruism** | selfless concern for others' wellbeing | "The author questions whether true altruism exists or all action is self-interested." |
+| **altruistic** | motivated by concern for others | "The donation appears altruistic, but the tax benefit complicates the motive." |
+| **ideology** | a system of ideas and values that shapes worldview | "The policy reflects an ideology that markets are always more efficient than regulation." |
+| **paradigm** | a model or framework for thinking about something | "The new research challenges the prevailing paradigm in the field." |
+| **hegemony** | dominance of one group over others | "Cultural hegemony explains why some languages become 'standard' while others are marginalized." |
+| **epistemology** | the branch of philosophy dealing with how we know what we know | "The argument raises epistemological questions: can we ever have direct access to the past?" |
+| **dichotomy** ★ | a division into two opposite categories | "The author presents a false dichotomy — as if only two options exist." |
+| **paradox** ★ | a statement that seems contradictory but may be true | "The paradox of choice: more options lead to less satisfaction." |
+| **disposition** | a tendency or inclination to behave in a certain way | "The researcher's own dispositions may have influenced the study design." |
+| **predisposition** | an existing tendency that makes something more likely | "A genetic predisposition does not guarantee the outcome — environment also matters." |
+| **propensity** | a natural tendency to behave in a certain way | "Humans have a propensity to prefer immediate rewards over larger future ones." |
+| **proclivity** | a strong natural inclination | "His proclivity toward risk was evident throughout the negotiation." |
+| **reciprocal** | mutual; each giving and receiving equally | "The agreement established a reciprocal obligation — both parties must perform." |
+| **subjective** ★ | based on personal feelings rather than facts | "The rating is subjective — it reflects the reviewer's taste, not an objective standard." |
+| **objective** ★ | not influenced by personal feelings; factual | "An objective standard applies uniformly, regardless of individual circumstances." |
+| **impartial** | not biased toward one side | "The study requires an impartial third-party auditor." |
+| **seminal** | highly influential or original | "Darwin's work is considered seminal in evolutionary biology." |
+
+---
+
+## ECONOMICS ★
+
+| Word | Plain Definition | LSAT-Context Usage |
+|------|-----------------|-------------------|
+| **subsidy** | financial support given by government to an industry | "Agricultural subsidies distort market prices and disadvantage foreign farmers." |
+| **monopoly** ★ | exclusive control over a product or service | "A natural monopoly exists when one firm can serve the entire market more efficiently." |
+| **oligopoly** | market dominated by a small number of large firms | "The airline industry functions as an oligopoly — a few firms share the majority of routes." |
+| **leverage** | using resources to maximize effect | "The firm leveraged its real estate holdings to fund rapid expansion." |
+| **fiduciary** | holding a position of trust and acting in another's interest | "A financial advisor has a fiduciary duty to act in the client's best interest." |
+| **commensurate** | proportionate; corresponding in size or degree | "The penalty should be commensurate with the harm caused." |
+| **arbitrage** | profiting from price differences in different markets | "Currency arbitrage exploits slight differences in exchange rates." |
+
+---
+
+## COMMONLY CONFUSED PAIRS
+*(These destroy test-takers who mix them up)*
+
+| Pair | Distinction |
+|------|------------|
+| **infer** vs **imply** | The *reader* infers. The *author* implies. You infer from what they imply. |
+| **affect** vs **effect** | *Affect* is usually a verb (to affect something). *Effect* is usually a noun (the effect). |
+| **prescribe** vs **proscribe** | *Prescribe* = recommend or require. *Proscribe* = forbid. |
+| **adverse** vs **averse** | *Adverse* = unfavorable conditions. *Averse* = reluctant or opposed to. |
+| **complement** vs **compliment** | *Complement* = complete or enhance. *Compliment* = praise. |
+| **comprise** vs **compose** | The whole *comprises* its parts. The parts *compose* the whole. |
+| **disinterested** vs **uninterested** | *Disinterested* = impartial (no bias). *Uninterested* = doesn't care. |
+| **normative** vs **descriptive** | *Normative* = what should be. *Descriptive* = what is. |
+| **correlation** vs **causation** | Things can be correlated without one causing the other. LSAT loves this. |
+| **sufficient** vs **necessary** | A sufficient condition guarantees the result. A necessary condition must be present but doesn't guarantee it. |
 
 ---
 
 ## Patterns to Watch
-*(Fill in after 20+ entries)*
+*(Fill in after each week of practice)*
 
 - Most misses from: ___
 - Easiest to confuse: ___
@@ -113,4 +272,13 @@ When you hit a word that slows you down or forces a Google search:
 
 ---
 
-*Last updated: 2026-06-06 | 07:32:05 PM / 19:32:05 EDT*
+## Personal Additions
+*(Add words here as you encounter them in practice)*
+
+| Word | Plain Definition | LSAT-Context Example | Source |
+|------|-----------------|----------------------|--------|
+| *proponent* | someone who argues in favor of something | "Critics and proponents of the policy disagree about environmental impact." | LR Electric Car Q (Jun 2) |
+
+---
+
+*Last updated: 2026-06-06 | 07:45:00 PM / 19:45:00 EDT*
