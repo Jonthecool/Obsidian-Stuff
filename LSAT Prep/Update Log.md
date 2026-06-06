@@ -23,7 +23,9 @@ related: "[[LSAT Prep Hub]]"
 | 8 | 2026-06-04 | 08:49:57 PM | 20:49:57 | EDT | [[Daily Question Log]] | Updated RC blind review entry + added LR S2 blind review entry (17/25) |
 | 9 | 2026-06-04 | 08:49:57 PM | 20:49:57 | EDT | [[Weekly Review]] | Updated Week 1 practice tests taken + filled in "Cowork" effort and motivation fields |
 | 10 | 2026-06-04 | 08:49:57 PM | 20:49:57 | EDT | [[AI Opinions]] | Added June 4 entry — "Cowork" opinions on LR S2 blind review, foundational reasoning gap, Q1 miss, Google AI usage |
-| 11 | 2026-06-06 | 12:00:00 AM | 00:00:00 | EDT | [[Weekly Review]], [[AI Opinions]] | Automated Saturday midnight review — Week 1 (May 30–Jun 5) confirmed complete. Cowork fields already filled on Jun 4; no new activity Jun 5 changed the assessment. Added Week 1 recap entry to AI Opinions. |
-| 11 | 2026-06-06 | 12:46:06 PM | 12:46:06 | EDT | [[Error Log]] | Populated full diagnostic error log — 30 LR misses by question type, RC timing misses, pattern analysis, Month 1 summary |
-| 12 | 2026-06-06 | 12:46:06 PM | 12:46:06 | EDT | [[AI Opinions]] | Added June 6 entry — "Cowork" on Flaw question priority, RC timing data, LR S1 blind review decision |
-| 13 | 2026-06-06 | 01:05:30 PM | 13:05:30 | EDT | [[Book Tips]] | Created note — unique tips extracted from all 3 books: LSATwithJack, The Loophole (Cassidy), The LSAT Trainer (Kim) |
+| 11 | 2026-06-06 | 12:00:00 AM | 00:00:00 | EDT | [[Weekly Review]], [[AI Opinions]] | Automated Saturday midnight review — Week 1 confirmed complete. Added Week 1 recap entry to AI Opinions |
+| 12 | 2026-06-06 | 12:46:06 PM | 12:46:06 | EDT | [[Error Log]] | Populated full diagnostic error log — 30 LR misses by question type, RC timing misses, pattern analysis, Month 1 summary |
+| 13 | 2026-06-06 | 12:46:06 PM | 12:46:06 | EDT | [[AI Opinions]] | Added June 6 entry — "Cowork" on Flaw question priority, RC timing data, LR S1 blind review decision |
+| 14 | 2026-06-06 | 01:05:30 PM | 13:05:30 | EDT | [[Book Tips]] | Created note — unique tips extracted from all 3 books: LSATwithJack, The Loophole, The LSAT Trainer |
+| 15 | 2026-06-06 | — | — | EDT | [[Practice Test Log]] | Added BR Session 1 RC (19/26), BR Session 2 LR 1 (17/25), full diagnostic question type breakdown, LR 1 diagnostic vs blind review comparison |
+| 16 | 2026-06-06 | — | — | EDT | [[AI Opinions]] | Added Chat entries (Jun 4 morning, Jun 4 evening, Jun 6) — blind review gap, Techniques/Roles/Principles gap, Flaw speed issue, priority drill list |
