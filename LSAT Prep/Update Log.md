@@ -30,3 +30,7 @@ related: "[[LSAT Prep Hub]]"
 | 16 | 2026-06-06 | — | — | EDT | [[AI Opinions]] | Added Chat entries (Jun 4 morning, Jun 4 evening, Jun 6) — blind review gap, Techniques/Roles/Principles gap, Flaw speed issue, priority drill list |
 | 17 | 2026-06-06 | — | — | EDT | [[Law School Goals]] | Created note — school list with dream/reach/likely tiers, full admissions stats for all schools, honest assessment by LSAT score range |
 | 18 | 2026-06-06 | — | — | EDT | [[Law School Goals]] | Updated Probable/Most Likely tier with real stats — added Penn State Dickinson, Duquesne, Villanova, UConn; added Safety Schools section with Widener, NYLS, Drexel |
+
+| 14 | 2026-06-06 | 07:32:05 PM | 19:32:05 | EDT | LR - Timing Strategy.md | CREATED — pacing system, skip rules, 2-min hard stop, benchmark table |
+| 15 | 2026-06-06 | 07:32:05 PM | 19:32:05 | EDT | Vocabulary Log.md | CREATED — starter words, categories (Law/Science/LR/Social Science), pattern tracker |
+| 16 | 2026-06-06 | 07:32:05 PM | 19:32:05 | EDT | LR - Pre-Question Protocol.md | CREATED — 4-step protocol: stem first, conclusion/premises, gap, pre-phrase |
