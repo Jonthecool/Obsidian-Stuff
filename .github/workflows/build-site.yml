@@ -2,7 +2,7 @@ name: Build & Deploy LSAT Site
 
 on:
   push:
-    branches: [main]
+    branches: [main, master]
   workflow_dispatch:   # lets you trigger manually from GitHub's Actions tab
 
 permissions:
