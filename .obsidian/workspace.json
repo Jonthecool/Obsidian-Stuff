@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "LSAT Prep/Vocabulary Log.md",
+                "file": "LSAT Prep/Update Log.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Vocabulary Log"
+              "title": "Update Log"
             }
           }
         ],
@@ -68,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "addera",
+                "query": "tendentious",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -89,7 +89,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -109,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "LSAT Prep/Vocabulary Log.md",
+                "file": "LSAT Prep/Update Log.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +120,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Vocabulary Log"
+              "title": "Backlinks for Update Log"
             }
           },
           {
@@ -170,13 +171,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "LSAT Prep/Vocabulary Log.md",
+                "file": "LSAT Prep/Update Log.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Vocabulary Log"
+              "title": "Outline of Update Log"
             }
           }
         ],
@@ -199,10 +200,11 @@
       "bases:Create new base": false
     }
   },
-  "active": "30b6b76b8410e35e",
+  "active": "a19406a1ec2f5603",
   "lastOpenFiles": [
-    "LSAT Prep/LR - Pre-Question Protocol.md",
     "LSAT Prep/Vocabulary Log.md",
+    "LSAT Prep/Update Log.md",
+    "LSAT Prep/LR - Pre-Question Protocol.md",
     "LSAT Prep/LR - Timing Strategy.md",
     "LSAT Prep/Error Log.md",
     "LSAT Prep/LSAT Prep Hub.md",
@@ -210,7 +212,6 @@
     "LSAT Prep/Law School Goals.md",
     "build.js.tmp.69028.5cecbee8517e",
     "Claude/Supplement Routine.md",
-    "LSAT Prep/Update Log.md",
     "LSAT Prep/Test Day Checklist.md",
     "LSAT Prep/LR - Conditional Logic.md",
     "LSAT Prep/Weekly Review.md",
