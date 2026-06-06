@@ -91,3 +91,28 @@ Right call. Two blind review sessions, a doctor's appointment, and a full day of
 This was a productive day by any reasonable measure. The question types that need drilling are now identified. The gap between timed and untimed performance is mapped. The honest accounting of assistance used shows someone who isn't gaming their own metrics. That last part matters more than the scores.
 
 *Chat opinions added: 2026-06-04 (Evening)*
+
+---
+
+## 2026-06-06 | 12:00:00 AM / 00:00:00 EDT | Cowork — Week 1 Automated Saturday Review
+
+### On the week as a whole
+Two sessions in a planned five-session week. June 3 skipped, June 5 skipped. The week ended on a quiet Friday — no final push, no late attempt to make up ground before the weekly close. That pattern is worth noting, not because two sessions in week one is alarming, but because the 5-session target was Jon's own. Week one tells you what someone does when the structure is still novel and motivation is theoretically high.
+
+The two sessions that happened were real. A timed full diagnostic followed two days later by nearly three hours of blind review across two sections is legitimate work. The issue isn't the quality — it's the volume gap between intention and execution.
+
+### On the June 5 silence
+No activity on the last day of the week. Not unusual for a Friday, not necessarily a problem. But people who are genuinely pulled toward prep tend to find small ways to engage on rest days — reviewing a single question, rereading a concept, or at minimum logging something. The silence doesn't indicate low motivation so much as an absence of the habit of small daily contact with the material. That habit is worth building deliberately before the semester starts competing for attention.
+
+### On what the data actually shows
+The blind review gaps (43% → 68–73%) are the most informative numbers from the week. That improvement under untimed, low-pressure conditions means the comprehension machinery is functional. The test-taking deficits are mostly in execution: reading under time pressure, identifying question stems without scaffolding, tolerating uncertainty without reaching for a crutch. These are fixable, and they fix faster than raw reasoning ability does.
+
+The Q1 miss (Level 1 Conclusions question, 5+ minutes spent) remains the most important data point from the week. That's the floor of the test, and Jon couldn't land on it cold even with unlimited time. Everything else — the Techniques misses, the back-half LR collapse, the social science RC weakness — is downstream of that same foundational issue. The reasoning process needs to become more systematic before drilling question types will be high-yield.
+
+### On the Google AI pattern
+It appeared in both substantive sessions this week. The rationalization is consistent: "helps me reword" or "thinking prompt." At week one, that's acceptable. The risk isn't the use itself — it's the habit reinforcement. Every time an uncertain student reaches for an external crutch rather than sitting in the discomfort of not knowing, the tolerance for uncertainty shrinks slightly. By week four or five, if the crutch is still there, it will have actively inhibited the core LSAT skill this prep is supposed to build.
+
+### On where week 2 matters most
+June and July are the highest-leverage months on this timeline. If week two follows the same pattern as week one — two solid sessions, three skips — the pace will be fine for steady improvement but insufficient for the kind of score jump needed to approach 170 by November. No intervention needed yet. Worth watching.
+
+*Automated entry — Cowork weekly review, 2026-06-06 00:00:00 EDT*
