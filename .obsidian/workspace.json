@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Claude/Supplement Routine.md",
+                "file": "LSAT Prep/LR - Question Types.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Supplement Routine"
+              "title": "LR - Question Types"
             }
           },
           {
@@ -108,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Claude/Supplement Routine.md",
+                "file": "LSAT Prep/LR - Question Types.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +118,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Supplement Routine"
+              "title": "Backlinks for LR - Question Types"
             }
           },
           {
