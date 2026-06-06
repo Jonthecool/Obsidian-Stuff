@@ -34,3 +34,5 @@ related: "[[LSAT Prep Hub]]"
 | 14 | 2026-06-06 | 07:32:05 PM | 19:32:05 | EDT | LR - Timing Strategy.md | CREATED — pacing system, skip rules, 2-min hard stop, benchmark table |
 | 15 | 2026-06-06 | 07:32:05 PM | 19:32:05 | EDT | Vocabulary Log.md | CREATED — starter words, categories (Law/Science/LR/Social Science), pattern tracker |
 | 16 | 2026-06-06 | 07:32:05 PM | 19:32:05 | EDT | LR - Pre-Question Protocol.md | CREATED — 4-step protocol: stem first, conclusion/premises, gap, pre-phrase |
+
+| 17 | 2026-06-06 | 07:45:00 PM | 19:45:00 | EDT | Vocabulary Log.md | MAJOR EXPANSION — 125+ words added across 7 categories: Reasoning Verbs, Describing Arguments, Logic & Inference, Change & Scale, Law & Governance, Philosophy/Social Science, Economics. Added Commonly Confused Pairs section. Words sourced by scanning The LSAT Trainer + The Loophole. |
