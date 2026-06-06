@@ -57,9 +57,14 @@ related: "[[LSAT Prep Hub]], [[Practice Test Log]]"
 
 | School | US News Rank | Median LSAT | Median GPA | Acceptance Rate | My LSAT Gap | My GPA vs Median |
 |--------|-------------|-------------|------------|-----------------|-------------|-----------------|
-| TBD | — | — | — | — | — | — |
+| Penn State Dickinson Law | ~#80s | 159 | 3.71 | 43% | +3 pts ✅ | +0.19 ✅ |
+| Rutgers Law | ~#50s | 158 | 3.66 | 33.5% | +4 pts ✅ | +0.24 ✅ |
+| UConn Law | ~#80s | 158 | 3.60 | ~45% | +4 pts ✅ | +0.30 ✅ |
+| Seton Hall | #61 | 161 | 3.71 | 42.8% | +1 pt ✅ | +0.19 ✅ |
+| Duquesne (Kline) | ~#100s | 156 | 3.57 | 56.1% | +6 pts ✅ | +0.33 ✅ |
+| Villanova | ~#60s | 160 | 3.70 | ~40% | +2 pts ✅ | +0.20 ✅ |
 
-**Candidates to research:** Widener Commonwealth, Duquesne, Penn State Dickinson, Seton Hall (if score 158–160), Rutgers (if score 158–160)
+**Notes:** These are your sweet spot at 160–163. GPA is above median at every single one. LSAT at target puts you at or above median for all of them. Penn State Dickinson gives 100% of students scholarships — strong financial incentive. Duquesne is the most accessible. Seton Hall and Rutgers are the most prestigious in this tier.
 
 ---
 
@@ -68,6 +73,21 @@ related: "[[LSAT Prep Hub]], [[Practice Test Log]]"
 |--------|-----------|
 | Rutgers Law | NJ connection, 158 median, 3.66 GPA median — strong candidate at 158+ |
 | Seton Hall | Only private NJ law school, 161 median, 3.71 GPA median — competitive at 160+ |
+| Penn State Dickinson | 159 median, 3.71 GPA median, 100% scholarship rate — very strong fit |
+| Duquesne (Kline) | 156 median, 3.57 GPA median, 56% acceptance — safest respectable option |
+
+---
+
+### 🛡️ Safety Schools
+> Virtually guaranteed admission at your target score. Apply for scholarship leverage.
+
+| School | US News Rank | Median LSAT | Median GPA | Acceptance Rate | My LSAT Gap | My GPA vs Median |
+|--------|-------------|-------------|------------|-----------------|-------------|------------------|
+| Widener Commonwealth | ~#180s | 150 | 3.32 | 60% | +12 pts ✅ | +0.58 ✅ |
+| New York Law School | ~#100s | 157 | 3.63 | 40% | +5 pts ✅ | +0.27 ✅ |
+| Drexel (Kline) | ~#100s | 155 | 3.56 | ~50% | +7 pts ✅ | +0.34 ✅ |
+
+**Notes:** Widener is a near-guaranteed admit at any score above 155 with your GPA. Useful as a safety net and for scholarship negotiation leverage at better schools. Bar passage rates at Widener are lower — worth knowing.
 
 ---
 

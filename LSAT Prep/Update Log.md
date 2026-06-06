@@ -29,3 +29,4 @@ related: "[[LSAT Prep Hub]]"
 | 15 | 2026-06-06 | — | — | EDT | [[Practice Test Log]] | Added BR Session 1 RC (19/26), BR Session 2 LR 1 (17/25), full diagnostic question type breakdown, LR 1 diagnostic vs blind review comparison |
 | 16 | 2026-06-06 | — | — | EDT | [[AI Opinions]] | Added Chat entries (Jun 4 morning, Jun 4 evening, Jun 6) — blind review gap, Techniques/Roles/Principles gap, Flaw speed issue, priority drill list |
 | 17 | 2026-06-06 | — | — | EDT | [[Law School Goals]] | Created note — school list with dream/reach/likely tiers, full admissions stats for all schools, honest assessment by LSAT score range |
+| 18 | 2026-06-06 | — | — | EDT | [[Law School Goals]] | Updated Probable/Most Likely tier with real stats — added Penn State Dickinson, Duquesne, Villanova, UConn; added Safety Schools section with Widener, NYLS, Drexel |
