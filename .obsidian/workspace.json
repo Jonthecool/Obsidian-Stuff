@@ -198,6 +198,7 @@
   },
   "active": "2b89b998ba70cb44",
   "lastOpenFiles": [
+    "build.js.tmp.39300.08c08c735e86",
     "build.js.tmp.39300.7166f1daace6",
     "LSAT Prep/Book Tips.md",
     "LSAT Prep/LR - Argument Structure.md",
@@ -215,7 +216,6 @@
     "node_modules/marked/lib/marked.umd.js.map",
     "node_modules/marked/lib/marked.esm.js",
     "node_modules/marked/lib/marked.esm.js.map",
-    "node_modules/marked/lib/marked.d.ts",
     "node_modules/marked/man/marked.1.md",
     "Claude/TestNote.md",
     "Claude/Supplement Routine.md",
