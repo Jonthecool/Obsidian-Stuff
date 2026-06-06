@@ -13,22 +13,89 @@ import { marked } from 'marked';
 const VAULT = 'LSAT Prep';   // path to your Obsidian folder in the repo root
 const OUT   = 'docs';        // GitHub Pages will serve from here
 
-const PAGE_CONFIG = [
-  { file: 'LSAT Prep Hub.md',          id: 'hub',       label: 'Dashboard',          icon: '🏠', section: 'Overview'              },
-  { file: 'Daily Question Log.md',      id: 'daily',     label: 'Daily Log',          icon: '📝', section: 'Overview'              },
-  { file: 'LR - Argument Structure.md', id: 'lr-struct', label: 'Argument Structure', icon: '🧩', section: 'Logical Reasoning'     },
-  { file: 'LR - Question Types.md',     id: 'lr-qtypes', label: 'Question Types',     icon: '📋', section: 'Logical Reasoning'     },
-  { file: 'LR - Common Flaws.md',       id: 'lr-flaws',  label: 'Common Flaws',       icon: '⚠️', section: 'Logical Reasoning'     },
-  { file: 'LR - Conditional Logic.md',  id: 'lr-cond',   label: 'Conditional Logic',  icon: '🔀', section: 'Logical Reasoning'     },
-  { file: 'RC - Passage Strategies.md', id: 'rc-strat',  label: 'Passage Strategies', icon: '📖', section: 'Reading Comprehension'  },
-  { file: 'RC - Question Types.md',     id: 'rc-qtypes', label: 'Question Types',     icon: '📋', section: 'Reading Comprehension'  },
-  { file: 'Practice Test Log.md',       id: 'pt-log',    label: 'Practice Test Log',  icon: '📊', section: 'Progress'              },
-  { file: 'Error Log.md',               id: 'errors',    label: 'Error Log',          icon: '❌', section: 'Progress'              },
-  { file: 'Weekly Review.md',           id: 'weekly',    label: 'Weekly Review',      icon: '🗓️', section: 'Progress'              },
-  { file: 'AI Opinions.md',             id: 'ai-ops',    label: 'AI Opinions',        icon: '🤖', section: 'Other'                 },
-  { file: 'Test Day Checklist.md',      id: 'testday',   label: 'Test Day',           icon: '✅', section: 'Other'                 },
-  { file: 'Update Log.md',              id: 'update',    label: 'Update Log',         icon: '📝', section: 'Other'                 },
+// Section display order in the sidebar
+const SECTION_ORDER = ['Overview', 'Logical Reasoning', 'Reading Comprehension', 'Progress', 'Other'];
+
+// Rules evaluated top-to-bottom — first match wins.
+// Add new rules here if you want a new note to land in a specific section/icon.
+const CATEGORY_RULES = [
+  // ── Overview ──────────────────────────────────────────────────────────────
+  { pattern: /LSAT Prep Hub/i,           section: 'Overview',              icon: '🏠' },
+  { pattern: /Daily/i,                   section: 'Overview',              icon: '📝' },
+
+  // ── Logical Reasoning ─────────────────────────────────────────────────────
+  { pattern: /^LR\b.*Argument/i,         section: 'Logical Reasoning',     icon: '🧩' },
+  { pattern: /^LR\b.*Question/i,         section: 'Logical Reasoning',     icon: '📋' },
+  { pattern: /^LR\b.*(Flaw|Error)/i,     section: 'Logical Reasoning',     icon: '⚠️' },
+  { pattern: /^LR\b.*Conditional/i,      section: 'Logical Reasoning',     icon: '🔀' },
+  { pattern: /^LR\b.*Assumption/i,       section: 'Logical Reasoning',     icon: '🔍' },
+  { pattern: /^LR\b.*Strengthen/i,       section: 'Logical Reasoning',     icon: '💪' },
+  { pattern: /^LR\b.*Weaken/i,           section: 'Logical Reasoning',     icon: '🪓' },
+  { pattern: /^LR\b.*Parallel/i,         section: 'Logical Reasoning',     icon: '🔁' },
+  { pattern: /^LR\b/i,                   section: 'Logical Reasoning',     icon: '🧠' }, // any other LR note
+
+  // ── Reading Comprehension ─────────────────────────────────────────────────
+  { pattern: /^RC\b.*Passage/i,          section: 'Reading Comprehension', icon: '📖' },
+  { pattern: /^RC\b.*Question/i,         section: 'Reading Comprehension', icon: '📋' },
+  { pattern: /^RC\b.*Strategy/i,         section: 'Reading Comprehension', icon: '🗺️' },
+  { pattern: /^RC\b.*Vocab/i,            section: 'Reading Comprehension', icon: '📝' },
+  { pattern: /^RC\b/i,                   section: 'Reading Comprehension', icon: '📚' }, // any other RC note
+
+  // ── Progress ──────────────────────────────────────────────────────────────
+  { pattern: /Practice Test/i,           section: 'Progress',              icon: '📊' },
+  { pattern: /Error Log/i,               section: 'Progress',              icon: '❌' },
+  { pattern: /Weekly Review/i,           section: 'Progress',              icon: '🗓️' },
+  { pattern: /Monthly Review/i,          section: 'Progress',              icon: '📅' },
+  { pattern: /Score/i,                   section: 'Progress',              icon: '📈' },
+  { pattern: /Log/i,                     section: 'Progress',              icon: '📋' },
+  { pattern: /Review/i,                  section: 'Progress',              icon: '🔄' },
+
+  // ── Other ─────────────────────────────────────────────────────────────────
+  { pattern: /AI|Cowork|Opinion/i,       section: 'Other',                 icon: '🤖' },
+  { pattern: /Test Day|Checklist/i,      section: 'Other',                 icon: '✅' },
+  { pattern: /Update|Changelog/i,        section: 'Other',                 icon: '📝' },
+  { pattern: /Resource|Link|Tool/i,      section: 'Other',                 icon: '🔗' },
+  { pattern: /Goal|Target/i,             section: 'Other',                 icon: '🎯' },
+  { pattern: /.*/,                       section: 'Other',                 icon: '📄' }, // catch-all
 ];
+
+// Derive label from filename: strip extension, strip "LR - "/"RC - " prefix for display
+function labelFromFile(filename) {
+  return filename.replace(/\.md$/i, '');
+}
+
+function slugify(str) {
+  return str.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+}
+
+function categorize(filename) {
+  const name = filename.replace(/\.md$/i, '');
+  for (const rule of CATEGORY_RULES) {
+    if (rule.pattern.test(name)) {
+      return { section: rule.section, icon: rule.icon };
+    }
+  }
+  return { section: 'Other', icon: '📄' };
+}
+
+// ─── Auto-discover all .md files in LSAT Prep ────────────────────────────────
+
+function discoverPages() {
+  let files;
+  try {
+    files = readdirSync(VAULT).filter(f => f.endsWith('.md'));
+  } catch {
+    console.error(`ERROR: Could not read folder "${VAULT}". Make sure build.js runs from the repo root.`);
+    process.exit(1);
+  }
+
+  return files.map(file => {
+    const { section, icon } = categorize(file);
+    const label = labelFromFile(file);
+    const id    = slugify(label);
+    return { file, id, label, icon, section };
+  });
+}
 
 // ─── Markdown helpers ─────────────────────────────────────────────────────────
 
