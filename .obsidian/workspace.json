@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Welcome.md",
+                "file": "LSAT Prep/LR - Conditional Logic.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Welcome"
+              "title": "LR - Conditional Logic"
             }
           },
           {
@@ -108,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Welcome.md",
+                "file": "LSAT Prep/LR - Conditional Logic.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +118,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Welcome"
+              "title": "Backlinks for LR - Conditional Logic"
             }
           },
           {
@@ -198,11 +198,15 @@
   },
   "active": "2b89b998ba70cb44",
   "lastOpenFiles": [
+    "LSAT Prep/Weekly Review.md",
+    "LSAT Prep/Update Log.md",
+    "LSAT Prep/Practice Test Log.md",
+    "Welcome.md",
+    "build.js.tmp.39300.fca3a6a1dbf5",
     "build.js.tmp.39300.08c08c735e86",
     "build.js.tmp.39300.7166f1daace6",
     "LSAT Prep/Book Tips.md",
     "LSAT Prep/LR - Argument Structure.md",
-    "Welcome.md",
     "LSAT Prep Hub]], [[LR - Argument Structure]], [[LR - Question Types]], [[LR - Common Flaws.md",
     "node_modules/marked/README.md",
     "node_modules/marked/LICENSE.md",
@@ -214,18 +218,13 @@
     "docs",
     "node_modules/marked/lib/marked.umd.js",
     "node_modules/marked/lib/marked.umd.js.map",
-    "node_modules/marked/lib/marked.esm.js",
-    "node_modules/marked/lib/marked.esm.js.map",
     "node_modules/marked/man/marked.1.md",
     "Claude/TestNote.md",
     "Claude/Supplement Routine.md",
-    "LSAT Prep/Weekly Review.md",
     "LSAT Prep/Test Day Checklist.md",
-    "LSAT Prep/Update Log.md",
     "LSAT Prep/LR - Conditional Logic.md",
     "LSAT Prep/LR - Common Flaws.md",
     "LSAT Prep/Error Log.md",
-    "LSAT Prep/Practice Test Log.md",
     "LSAT Prep/RC - Passage Strategies.md",
     "LSAT Prep/LSAT Prep Hub.md",
     "LSAT Prep/RC - Question Types.md",
