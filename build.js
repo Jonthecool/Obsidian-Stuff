@@ -122,34 +122,33 @@ marked.use({ gfm: true, breaks: false });
 
 // ─── Load pages ───────────────────────────────────────────────────────────────
 
+const PAGE_CONFIG = discoverPages();  // auto-discovered from LSAT Prep folder
+
 const pages = [];
 let hubFM   = {};
 
 for (const cfg of PAGE_CONFIG) {
   const filePath = join(VAULT, cfg.file);
   try {
-    const raw       = readFileSync(filePath, 'utf8');
+    const raw          = readFileSync(filePath, 'utf8');
     const { fm, body } = parseFM(raw);
-    if (cfg.id === 'hub') hubFM = fm;
-    const html = marked.parse(cleanObsidian(body));
-    pages.push({ ...cfg, html, ok: true });
+    // Use the hub file for score/meta regardless of its exact name
+    if (/LSAT Prep Hub/i.test(cfg.file)) hubFM = fm;
+    pages.push({ ...cfg, html: marked.parse(cleanObsidian(body)), ok: true });
   } catch {
     pages.push({ ...cfg, html: `<p class="md-err">⚠ Could not load <code>${cfg.file}</code></p>`, ok: false });
   }
 }
 
-// Also pick up any extra .md files not in PAGE_CONFIG and put them in Other
-const knownFiles = new Set(PAGE_CONFIG.map(p => p.file));
-try {
-  for (const f of readdirSync(VAULT)) {
-    if (!f.endsWith('.md') || knownFiles.has(f)) continue;
-    const raw  = readFileSync(join(VAULT, f), 'utf8');
-    const { body } = parseFM(raw);
-    const id   = f.replace(/\.md$/, '').toLowerCase().replace(/[^a-z0-9]+/g, '-');
-    const label = f.replace(/\.md$/, '');
-    pages.push({ file: f, id, label, icon: '📄', section: 'Other', html: marked.parse(cleanObsidian(body)), ok: true });
-  }
-} catch { /* VAULT dir missing — handled by page-level errors above */ }
+// Sort: within each section, keep Hub first, then alphabetically
+pages.sort((a, b) => {
+  const si = SECTION_ORDER.indexOf(a.section) - SECTION_ORDER.indexOf(b.section);
+  if (si !== 0) return si;
+  // Hub always first in Overview
+  if (/LSAT Prep Hub/i.test(a.file)) return -1;
+  if (/LSAT Prep Hub/i.test(b.file)) return  1;
+  return a.label.localeCompare(b.label);
+});
 
 // ─── Score / meta from hub frontmatter ───────────────────────────────────────
 
