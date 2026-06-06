@@ -175,3 +175,50 @@ Use official LSAC tests. Suggested order (save recent tests for final prep):
   - Q8 answered correctly in 23s on a Level 3 — confident fast answer on hard question is a good sign
   - Memory contamination risk noted — may remember LR 2 and RC 2 content from diagnostic, decision made to skip remaining sections or wait 2-3 weeks before blind reviewing them
   - RC 2 and LR 2 blind review deferred — existing data sufficient to identify weak spots
+
+---
+
+### Diagnostic vs Blind Review Comparison — LR 1 (June 6, 2026)
+
+| Metric | Diagnostic (Timed) | Blind Review (Untimed) |
+|--------|-------------------|----------------------|
+| Score | 10/25 (40%) | 17/25 (68%) |
+| Correct | 10 | 17 |
+| Gap | — | +7 questions |
+| Assistance | None | Gemini volunteered question types (asterisk) |
+
+**Key finding:** +7 questions gained purely by removing time pressure. Time is currently the primary LR enemy, not comprehension.
+
+**Question types missed — Diagnostic LR 1:**
+Conclusion, Flaw, Weaken, Sufficient Assumption, Reasoning/Role, Parallel, Disagree
+
+**Question types missed — Blind Review LR 1:**
+Conclusions and Disputes (Q1), Techniques/Roles/Principles (Q11, Q20, Q24), Strengthen or Weaken (Q14), Flaws (Q21), Deductions and Inference (Q22), Explain or Resolve (Q25)
+
+**What this means:**
+- Flaw questions missed on diagnostic are now being answered correctly in blind review — comprehension is there, speed is the gap
+- Techniques/Roles/Principles missed 3 times even untimed = genuine content gap, priority drill target
+- Time pressure is causing roughly 7 wrong answers per LR section — biggest single lever for score improvement right now
+
+---
+
+### Full Diagnostic Breakdown — Question Types (June 6, 2026)
+
+**LR 1 Diagnostic (10/23, 43%) — Question type list:**
+Q1 Conclusion, Q2 Parallel (Flaw), Q3 Supported, Q4 Flaw, Q5 Weaken, Q6 Sufficient Assumption, Q7 Supported, Q8 Supported, Q9 Weaken, Q10 Conclusion, Q11 Reasoning (Role), Q12 Parallel, Q13 Sufficient Assumption, Q14 Weaken, Q15 Sufficient Assumption, Q16 Disagree, Q17 Flaw, Q18 Supported, Q19 Strengthen, Q20 Reasoning, Q21 Flaw, Q22 Supported, Q23 Sufficient Assumption, Q24 Supported (skipped), Q25 Paradox (skipped)
+
+**LR 2 Diagnostic (10/25, 40%) — Missed question types:**
+Supported, Paradox, Disagree, Flaw, Necessary Assumption, Conclusion, Flaw, Necessary Assumption, Flaw, Weaken, Parallel Flaw, Must Be True, Flaw
+- Flaw missed 4 times across LR 2 alone — clearest single weakness across both LR sections combined
+
+**RC Diagnostic (15/22 attempted, 56%) — By passage:**
+- Rita Dove (Humanities): Mostly clean
+- Music and Language (Natural Sciences): Few misses
+- Web Links (Law): Multiple misses — weakest passage
+- Irish Landscape (Social Sciences): Q27 timed out at 0:00 — ran out entirely
+
+**Cross-section findings:**
+- Flaw is the #1 LR question type weakness across both diagnostic sections
+- Techniques/Roles/Principles is the #1 untimed weakness (still missing in blind review)
+- Social science passages remain the RC weak spot
+- Law passages in RC also showing weakness on diagnostic (contradicts blind review where law passages were strong — worth monitoring)

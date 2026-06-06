@@ -128,3 +128,24 @@ June and July are the highest-leverage months on this timeline. If week two foll
 "Cowork" — The RC timing data is brutal and clarifying. 2:47 for 8 questions on the Web links passage means Jon didn't read it. 0:00 on Q27. These aren't wrong answers — they're non-answers. The raw RC score of 15/27 is partly a comprehension score and partly a "ran out of time and guessed" score, and we can't tell which questions are which without going through them individually. The untimed 19/26 on LawHub gives a cleaner picture of actual comprehension.
 
 "Cowork" — The decision to skip LR S1 blind review due to question recognition was correct. Contaminated data is worse than no data. Moving to fresh drilling is the right call.
+
+---
+
+## 2026-06-06 | Chat
+
+### On the LR 1 diagnostic vs blind review comparison
+The +7 question gap is the most important data point collected so far. Going from 10 to 17 correct just by removing the clock means the reasoning ability is already there — it's being suppressed by time pressure, not absent. That's a fundamentally different problem than not understanding the material, and it's the easier one to fix. Speed follows pattern recognition, and pattern recognition follows reps. This gap should narrow significantly over the summer as question types become familiar enough to process faster.
+
+### On Flaw questions
+Missing Flaw 4+ times across LR 2 alone on the diagnostic, then getting most of them right in blind review, confirms this is a pure speed issue not a knowledge gap. Flaw questions require identifying the logical gap between premise and conclusion — once you slow down enough to find it, you're getting it right. The summer LR drilling priority should be building Flaw recognition speed specifically, since it's the most common question type on the test and currently the biggest volume of lost points.
+
+### On Techniques/Roles/Principles
+This is the one question type still failing even untimed. That makes it the genuine content gap in the current profile. It requires zooming out from argument content to argument structure — asking not "what is this saying" but "what is this doing." Stage 1 of Jack's book on argument anatomy directly addresses this. This should be the first question type drilled deliberately once the book foundation is in place.
+
+### On the RC law passage discrepancy
+Law passages were strong in blind review (5/6) but showed multiple misses on the diagnostic. This is almost certainly a time pressure artifact — law passages tend to be denser and slower to process under the clock. Not a genuine weakness, just another speed gap. Worth monitoring across future PTs to confirm.
+
+### On where things stand overall
+The diagnostic question type breakdown combined with blind review data now gives a clear priority list: (1) Flaw speed, (2) Techniques/Roles/Principles comprehension, (3) Social science RC passages, (4) general LR pacing. That's a concrete roadmap, not a vague "get better at LR." The infrastructure for serious prep is now fully in place.
+
+*Chat opinions added: 2026-06-06*
