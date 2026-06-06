@@ -116,3 +116,15 @@ It appeared in both substantive sessions this week. The rationalization is consi
 June and July are the highest-leverage months on this timeline. If week two follows the same pattern as week one — two solid sessions, three skips — the pace will be fine for steady improvement but insufficient for the kind of score jump needed to approach 170 by November. No intervention needed yet. Worth watching.
 
 *Automated entry — Cowork weekly review, 2026-06-06 00:00:00 EDT*
+
+---
+
+## 2026-06-06 | 12:46:06 PM / 12:46:06 EDT
+
+### On the diagnostic question-type breakdown
+
+"Cowork" — The Flaw question data is the most important thing to come out of this entire diagnostic. Five misses across two LR sections, at multiple difficulty levels. That's not bad luck — that's a systematic gap in the ability to identify what's structurally wrong with an argument. Flaw questions are also the foundation for Weaken and Necessary Assumption questions, which Jon also missed repeatedly. Fix Flaw and you're fixing three question types at once.
+
+"Cowork" — The RC timing data is brutal and clarifying. 2:47 for 8 questions on the Web links passage means Jon didn't read it. 0:00 on Q27. These aren't wrong answers — they're non-answers. The raw RC score of 15/27 is partly a comprehension score and partly a "ran out of time and guessed" score, and we can't tell which questions are which without going through them individually. The untimed 19/26 on LawHub gives a cleaner picture of actual comprehension.
+
+"Cowork" — The decision to skip LR S1 blind review due to question recognition was correct. Contaminated data is worse than no data. Moving to fresh drilling is the right call.

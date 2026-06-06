@@ -24,3 +24,5 @@ related: "[[LSAT Prep Hub]]"
 | 9 | 2026-06-04 | 08:49:57 PM | 20:49:57 | EDT | [[Weekly Review]] | Updated Week 1 practice tests taken + filled in "Cowork" effort and motivation fields |
 | 10 | 2026-06-04 | 08:49:57 PM | 20:49:57 | EDT | [[AI Opinions]] | Added June 4 entry — "Cowork" opinions on LR S2 blind review, foundational reasoning gap, Q1 miss, Google AI usage |
 | 11 | 2026-06-06 | 12:00:00 AM | 00:00:00 | EDT | [[Weekly Review]], [[AI Opinions]] | Automated Saturday midnight review — Week 1 (May 30–Jun 5) confirmed complete. Cowork fields already filled on Jun 4; no new activity Jun 5 changed the assessment. Added Week 1 recap entry to AI Opinions. |
+| 11 | 2026-06-06 | 12:46:06 PM | 12:46:06 | EDT | [[Error Log]] | Populated full diagnostic error log — 30 LR misses by question type, RC timing misses, pattern analysis, Month 1 summary |
+| 12 | 2026-06-06 | 12:46:06 PM | 12:46:06 | EDT | [[AI Opinions]] | Added June 6 entry — "Cowork" on Flaw question priority, RC timing data, LR S1 blind review decision |
