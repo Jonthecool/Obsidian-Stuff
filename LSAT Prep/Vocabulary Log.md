@@ -263,6 +263,111 @@ When you hit a word that slows you down or forces a Google search:
 
 ---
 
+## SCIENCE & BIOLOGY ★★
+*(RC science passages use precise technical vocabulary — you don't need to know the science, just the words)*
+
+| Word | Plain Definition | LSAT-Context Usage |
+|------|-----------------|-------------------|
+| **cognitive** ★ | relating to mental processes like thinking, learning, and memory | "The study measured cognitive performance before and after the intervention." |
+| **cognition** | the mental process of acquiring knowledge and understanding | "Language acquisition depends on cognition developing before age five." |
+| **neurological** | relating to the nervous system and brain | "Neurological evidence challenges the assumption that all behavior is learned." |
+| **neuroscience** | the scientific study of the nervous system | "Neuroscience research suggests that memory is reconstructive, not reproductive." |
+| **perception** | the way the brain interprets sensory information | "Perception, not reality, governs how individuals make decisions." |
+| **physiological** | relating to the normal functions of a living organism | "The physiological response to stress is distinct from the psychological one." |
+| **physiology** | the branch of biology dealing with normal functions of organisms | "Human physiology was used to argue against the climate adaptation theory." |
+| **evolutionary** ★ | relating to the gradual development of species over time | "The evolutionary argument holds that altruistic behavior benefits genetic relatives." |
+| **evolution** | the process by which species change over successive generations | "Evolution does not imply progress — only change suited to environment." |
+| **natural selection** | the process by which organisms better adapted to their environment survive | "Natural selection favors traits that increase reproductive success, not longevity." |
+| **adaptation** | a trait that increases an organism's fitness in its environment | "The adaptation was initially disadvantageous — its benefit only emerged later." |
+| **ecosystem** | a community of living things interacting with their environment | "Disrupting one species in an ecosystem can cascade unpredictably." |
+| **biodiversity** | the variety of life within a given area | "High biodiversity is correlated with ecosystem resilience, not productivity." |
+| **photosynthesis** | the process by which plants convert sunlight into energy | "Photosynthesis rates declined as atmospheric CO2 increased beyond a threshold." |
+| **symbiotic** | relating to a relationship where both organisms benefit | "The relationship is not truly symbiotic — one party benefits at the other's expense." |
+| **parasitic** | relating to an organism that benefits at the host's expense | "The author analogizes the corporation's behavior to a parasitic relationship." |
+| **geological** | relating to the physical structure and history of the earth | "Geological evidence places the extinction event 66 million years ago." |
+| **sedimentary** | relating to rock formed from deposited particles | "Sedimentary layers provided the timeline for reconstructing ancient climates." |
+| **archaeological** | relating to the study of human history through physical remains | "Archaeological evidence contradicts the written record of the founding." |
+| **artifact** | a human-made object, especially one of historical interest | "The artifact's age was contested because dating methods varied by 200 years." |
+
+---
+
+## RHETORIC & LANGUAGE ★★
+*(RC passages about linguistics and argumentation use these precisely)*
+
+| Word | Plain Definition | LSAT-Context Usage |
+|------|-----------------|-------------------|
+| **rhetoric** ★ | the art of effective or persuasive speaking or writing | "The passage critiques the rhetoric of the reform movement as misleading." |
+| **rhetorical** | relating to rhetoric; used for persuasive effect rather than literal meaning | "The rhetorical question implies the answer without stating it." |
+| **semantics** | the branch of linguistics dealing with meaning | "The disagreement is partly semantic — both sides define 'harm' differently." |
+| **lexicon** | the vocabulary of a person, language, or field | "The legal lexicon uses 'malice' in a narrower sense than everyday speech." |
+| **vernacular** | the language or dialect of ordinary people in a region | "The statute was written in technical language, not the vernacular of those it governed." |
+| **colloquial** | relating to informal, everyday language | "The colloquial use of 'literally' differs from its technical meaning." |
+| **euphemism** | a mild or indirect word used in place of one that might seem harsh | "'Downsizing' is a euphemism that obscures the human cost of layoffs." |
+| **hyperbole** | deliberate exaggeration for emphasis | "The claim is hyperbole — the author does not literally mean every case." |
+| **allegory** | a story or image with a hidden meaning representing something else | "The passage reads the tale as an allegory for colonial displacement." |
+| **didactic** | intended to teach or instruct, often in a heavy-handed way | "The author's tone is didactic — she assumes readers need to be corrected." |
+| **pedantic** | overly concerned with minor details or rules; showing off knowledge | "The objection is pedantic — it focuses on terminology rather than substance." |
+| **propaganda** | information used to promote a particular political cause or viewpoint | "The author distinguishes persuasion from propaganda based on transparency of intent." |
+| **polemic** | a strong verbal or written attack on someone or something | "The essay is a polemic — it argues against, not merely analyzes, the opposing view." |
+| **apocryphal** | of doubtful authenticity; widely circulated but probably not true | "The founding story is apocryphal — no contemporary source confirms it." |
+
+---
+
+## DESCRIBING PEOPLE & POSITIONS ★★
+*(Common in RC author-attitude and LR argument-source questions)*
+
+| Word | Plain Definition | LSAT-Context Usage |
+|------|-----------------|-------------------|
+| **skeptic** | someone who questions accepted opinions or claims | "The author is not a skeptic — she accepts the finding but disputes its implications." |
+| **skepticism** ★ | a questioning attitude toward knowledge or claims | "Scientific skepticism demands replication before accepting any single study." |
+| **erudite** | having or showing great knowledge | "The passage adopts an erudite tone, assuming familiarity with the earlier debate." |
+| **perspicacious** | having a ready insight; shrewd | "A perspicacious reader notices that the author's premise contradicts her conclusion." |
+| **acumen** | the ability to make good judgments and quick decisions | "The policy required legal acumen that the committee lacked." |
+| **astute** | having an ability to accurately assess situations | "An astute reader notices the shift from 'most' to 'all' in the second paragraph." |
+| **sagacious** | having good judgment; wise | "The dissent was more sagacious than the majority — later rulings proved it right." |
+| **magnanimous** | generous or forgiving, especially toward rivals | "The magnanimous framing of the concession conceals the argument's actual concession." |
+| **parsimonious** | unwilling to spend or use more than necessary; stingy | "The parsimonious explanation requires fewer assumptions and is therefore preferred." |
+| **ostentatious** | designed to impress or attract notice | "The ostentatious language obscures what is, at core, a simple causal claim." |
+| **mendacious** | not telling the truth; lying | "The author stops short of calling the official account mendacious." |
+| **veracity** | the quality of being truthful | "The witness's veracity was questioned given her prior inconsistent statements." |
+| **candid** | truthful and straightforward | "A candid reading of the evidence does not support the conclusion." |
+| **circumspect** | wary and unwilling to take risks; cautious | "The author is circumspect — she hedges every claim with qualifiers." |
+| **recalcitrant** | stubbornly uncooperative | "The recalcitrant minority blocked ratification despite majority support." |
+| **intransigent** | refusing to agree or compromise | "Both parties remained intransigent, and the negotiation collapsed." |
+| **obdurate** | stubbornly refusing to change one's opinion | "The obdurate defendant refused to accept the settlement despite clear evidence against him." |
+| **belligerent** | hostile and aggressive | "The belligerent tone of the editorial undermines its credibility as objective analysis." |
+| **benevolent** | well-meaning and kindly | "The policy is framed as benevolent but functions as a constraint on autonomy." |
+| **idiosyncratic** | peculiar or individual; distinctive to one person or thing | "The idiosyncratic methodology makes the results difficult to replicate." |
+
+---
+
+## DESCRIBING CONDITIONS & QUALITIES ★★
+*(Words that describe how strong, weak, stable, or extreme something is)*
+
+| Word | Plain Definition | LSAT-Context Usage |
+|------|-----------------|-------------------|
+| **tenuous** | thin, weak; not firmly held or based on solid evidence | "The connection between the two variables is tenuous at best." |
+| **robust** | strong and healthy; well-supported | "A robust finding holds across multiple methodologies and sample sizes." |
+| **volatile** | liable to change rapidly and unpredictably | "Volatile market conditions undermined the long-term projections." |
+| **resilient** | able to recover quickly from difficulties | "The resilient population adapted faster than models predicted." |
+| **incontrovertible** | not able to be denied or disputed | "The author claims the evidence is incontrovertible, but the sample is small." |
+| **irrefutable** | impossible to deny or disprove | "No evidence is truly irrefutable — new data can always reframe prior findings." |
+| **negligible** ★ | so small or unimportant as to be not worth considering | "The effect was statistically significant but practically negligible." |
+| **pernicious** ★ | having a harmful effect, especially in a subtle way | "The pernicious assumption that ability is fixed undermines educational policy." |
+| **innocuous** | not harmful or offensive | "What appeared innocuous on its face was later shown to cause systemic harm." |
+| **deleterious** | causing harm or damage | "The long-term deleterious effects were not apparent in the initial trial." |
+| **inimical** | tending to obstruct or harm | "The regulation was inimical to the interests of small producers." |
+| **antithetical** | directly opposed or contrasted | "The new policy is antithetical to the values the organization was founded on." |
+| **arduous** | involving great effort; difficult and tiring | "The arduous approval process deterred small firms from applying." |
+| **onerous** | involving an oppressive amount of effort or difficulty | "The onerous compliance requirements imposed disproportionate burdens on small businesses." |
+| **prolific** | producing much or many; highly productive | "The prolific researcher published 40 papers in a decade, but quality varied." |
+| **aggregate** ★ | formed by combining many elements; a total | "The aggregate data obscures significant variation across subgroups." |
+| **equilibrium** | a state of balance among various forces | "The market reaches equilibrium when supply and demand are equal." |
+| **fiscal** | relating to government revenue, especially taxes | "Fiscal policy, not monetary policy, was responsible for the deficit." |
+| **culpability** | responsibility for a fault or wrong | "The study raises questions about corporate culpability for environmental damage." |
+
+---
+
 ## Patterns to Watch
 *(Fill in after each week of practice)*
 
