@@ -674,16 +674,46 @@ a:hover{text-decoration:underline}
 <!-- Flashcard modal -->
 <div id="flash-modal" onclick="if(event.target===this)closeFlash()">
   <div id="flash-box">
-    <button id="flash-close" onclick="closeFlash()">×</button>
-    <div id="flash-counter"></div>
-    <div id="flash-card" onclick="flipCard()"></div>
-    <div id="flash-hint">tap card to reveal</div>
-    <div class="flash-actions">
-      <button class="flash-btn" onclick="prevCard()">← Prev</button>
-      <button class="flash-btn primary" onclick="flipCard()">Flip</button>
-      <button class="flash-btn" onclick="nextCard()">Next →</button>
+    <div class="flash-topbar">
+      <span class="flash-title">Flashcards</span>
+      <span class="flash-meta" id="flash-counter"></span>
+      <button id="flash-close" onclick="closeFlash()">×</button>
+    </div>
+    <div class="flash-track"><div class="flash-track-fill" id="flash-track-fill"></div></div>
+    <div class="flash-scene" onclick="flipCard()">
+      <div class="flash-flipper" id="flash-flipper">
+        <div class="flash-face">
+          <div class="flash-side-label">Question</div>
+          <div class="flash-text" id="flash-front"></div>
+        </div>
+        <div class="flash-face-back">
+          <div class="flash-side-label">Answer</div>
+          <div class="flash-text" id="flash-back"></div>
+        </div>
+      </div>
+    </div>
+    <div class="flash-hint" id="flash-hint">tap card or press <kbd style="font-size:10px;padding:1px 4px;border:1px solid var(--border);border-radius:3px;font-family:monospace">Space</kbd> to flip</div>
+    <div class="flash-session">
+      <span class="know-c">✅ Know it: <b id="fc-know">0</b></span>
+      <span class="idk-c">🔁 Review: <b id="fc-idk">0</b></span>
+    </div>
+    <div class="flash-controls">
+      <button class="flash-btn" onclick="fcNav(-1)">← Prev</button>
+      <button class="flash-btn know" onclick="markCard(true)">✅ Know it</button>
+      <button class="flash-btn idk"  onclick="markCard(false)">🔁 Review</button>
+      <button class="flash-btn" onclick="shuffleCards()">⇄ Shuffle</button>
+      <button class="flash-btn" onclick="fcNav(1)">Next →</button>
     </div>
   </div>
+</div>
+
+<!-- Confidence poll (shown in sidebar bottom) -->
+<div id="mood-banner" style="display:none;position:fixed;bottom:0;left:0;width:var(--sw);padding:10px 12px;background:var(--surf);border-top:1px solid var(--border);z-index:201">
+  <div style="font-size:11px;color:var(--text3);margin-bottom:6px;font-weight:500">How's your study confidence today?</div>
+  <div style="display:flex;justify-content:space-between">
+    ${['😰','😐','🙂','💪','🔥'].map((e,i)=>`<span class="mood-opt" data-v="${i+1}" onclick="setMood(${i+1})" title="${['Struggling','Unsure','Okay','Confident','On fire!'][i]}" style="font-size:22px;cursor:pointer;opacity:.4;transition:opacity .1s,transform .1s">${e}</span>`).join('')}
+  </div>
+  <div id="mood-history" style="margin-top:8px;display:flex;gap:3px;align-items:flex-end;height:24px"></div>
 </div>
 
 <div id="main">
@@ -790,24 +820,47 @@ document.getElementById('search-input').addEventListener('keydown',e=>{
 document.getElementById('search-modal').addEventListener('click',e=>{ if(e.target===document.getElementById('search-modal')) closeSearch(); });
 
 // ── Flashcards ──
-let _fcCards=[], _fcIdx=0, _fcFlipped=false;
+let _fc={cards:[],idx:0,flipped:false,know:0,idk:0};
 function openFlash(id){
   const cards=FCDATA[id];
   if(!cards||!cards.length) return;
-  _fcCards=cards; _fcIdx=0; _fcFlipped=false;
+  _fc={cards:[...cards],idx:0,flipped:false,know:0,idk:0};
   document.getElementById('flash-modal').classList.add('open');
+  document.body.style.overflow='hidden';
   renderCard();
 }
-function closeFlash(){ document.getElementById('flash-modal').classList.remove('open'); }
-function renderCard(){
-  const c=_fcCards[_fcIdx];
-  document.getElementById('flash-counter').textContent=(_fcIdx+1)+' / '+_fcCards.length;
-  document.getElementById('flash-card').textContent=_fcFlipped ? c.back : c.front;
-  document.getElementById('flash-hint').textContent=_fcFlipped?'':'tap card to reveal answer';
+function closeFlash(){
+  document.getElementById('flash-modal').classList.remove('open');
+  document.body.style.overflow='';
 }
-function flipCard(){ _fcFlipped=!_fcFlipped; renderCard(); }
-function nextCard(){ _fcIdx=(_fcIdx+1)%_fcCards.length; _fcFlipped=false; renderCard(); }
-function prevCard(){ _fcIdx=(_fcIdx-1+_fcCards.length)%_fcCards.length; _fcFlipped=false; renderCard(); }
+function renderCard(){
+  const c=_fc.cards[_fc.idx];
+  document.getElementById('flash-counter').textContent=(_fc.idx+1)+' / '+_fc.cards.length;
+  document.getElementById('flash-front').textContent=c.front;
+  document.getElementById('flash-back').textContent=c.back;
+  document.getElementById('flash-flipper').classList.toggle('flipped',_fc.flipped);
+  document.getElementById('flash-hint').style.visibility=_fc.flipped?'hidden':'visible';
+  document.getElementById('flash-track-fill').style.width=((_fc.idx+1)/_fc.cards.length*100)+'%';
+  document.getElementById('fc-know').textContent=_fc.know;
+  document.getElementById('fc-idk').textContent=_fc.idk;
+}
+function flipCard(){ _fc.flipped=!_fc.flipped; renderCard(); }
+function fcNav(d){
+  _fc.idx=(_fc.idx+d+_fc.cards.length)%_fc.cards.length;
+  _fc.flipped=false; renderCard();
+}
+function markCard(knew){
+  if(knew) _fc.know++; else _fc.idk++;
+  renderCard();
+  setTimeout(()=>fcNav(1),320);
+}
+function shuffleCards(){
+  for(let i=_fc.cards.length-1;i>0;i--){
+    const j=Math.floor(Math.random()*(i+1));
+    [_fc.cards[i],_fc.cards[j]]=[_fc.cards[j],_fc.cards[i]];
+  }
+  _fc.idx=0; _fc.flipped=false; renderCard();
+}
 
 // ── Checkboxes ──
 function saveBoxes(){
@@ -826,15 +879,99 @@ function loadBoxes(){
   }catch(_){}
 }
 
+// ── Mastery tracker ──
+function setMastery(id,level){
+  try{
+    const m=JSON.parse(localStorage.getItem('lsat-mastery')||'{}');
+    m[id]=m[id]===level?0:level; // toggle off if same
+    localStorage.setItem('lsat-mastery',JSON.stringify(m));
+  }catch(_){}
+  renderMastery();
+}
+function renderMastery(){
+  try{
+    const m=JSON.parse(localStorage.getItem('lsat-mastery')||'{}');
+    // Update mastery buttons in page headers
+    document.querySelectorAll('.m-btn').forEach(btn=>{
+      const id=btn.dataset.id, lv=parseInt(btn.dataset.level);
+      btn.classList.toggle('active', m[id]===lv);
+    });
+    // Update sidebar nav dots
+    document.querySelectorAll('.s-nav-item[id^="nav-"]').forEach(item=>{
+      const id=item.id.slice(4);
+      const lv=m[id]||0;
+      let dot=item.querySelector('.mastery-sidedot');
+      if(!dot){ dot=document.createElement('span'); dot.className='mastery-sidedot'; dot.style.cssText='font-size:8px;flex-shrink:0;margin-left:auto'; item.appendChild(dot); }
+      dot.textContent=lv===1?'🔴':lv===2?'🟡':lv===3?'🟢':'';
+    });
+  }catch(_){}
+}
+
+// ── Mood / confidence poll ──
+const MOODS=['😰','😐','🙂','💪','🔥'];
+const MOOD_LABELS=['Struggling','Unsure','Okay','Confident','On fire!'];
+function todayKey(){ const d=new Date(); return d.getFullYear()+'-'+(d.getMonth()+1)+'-'+d.getDate(); }
+function setMood(v){
+  try{
+    const h=JSON.parse(localStorage.getItem('lsat-mood')||'{}');
+    h[todayKey()]=v;
+    // keep last 30 days only
+    const keys=Object.keys(h).sort();
+    if(keys.length>30) keys.slice(0,-30).forEach(k=>delete h[k]);
+    localStorage.setItem('lsat-mood',JSON.stringify(h));
+  }catch(_){}
+  renderMood();
+}
+function renderMood(){
+  try{
+    const h=JSON.parse(localStorage.getItem('lsat-mood')||'{}');
+    const today=todayKey();
+    const todayVal=h[today]||0;
+    document.querySelectorAll('.mood-opt').forEach(el=>{
+      const v=parseInt(el.dataset.v);
+      el.style.opacity=todayVal===v?'1':todayVal&&v<todayVal?'0.6':'0.4';
+      el.style.transform=todayVal===v?'scale(1.3)':'scale(1)';
+    });
+    // Sparkline: last 7 days
+    const keys=Object.keys(h).sort().slice(-7);
+    const hist=document.getElementById('mood-history');
+    if(hist&&keys.length>1){
+      hist.innerHTML=keys.map(k=>{
+        const val=h[k]||0;
+        const ht=Math.round((val/5)*24);
+        const isToday=k===today;
+        return \`<div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:2px">
+          <div style="width:100%;height:\${ht}px;background:\${isToday?'var(--accent)':'var(--border)'};border-radius:2px;transition:height .3s"></div>
+          <span style="font-size:8px;color:var(--text3)">\${k.slice(5)}</span>
+        </div>\`;
+      }).join('');
+    }
+    // Show mood banner only if not answered today or show for a moment
+    const banner=document.getElementById('mood-banner');
+    if(banner) banner.style.display='block';
+  }catch(_){}
+}
+
 // ── Keyboard shortcuts ──
 document.addEventListener('keydown',e=>{
-  if(document.getElementById('search-modal').classList.contains('open')) return;
+  const searchOpen=document.getElementById('search-modal').classList.contains('open');
+  const flashOpen =document.getElementById('flash-modal').classList.contains('open');
+  if(flashOpen){
+    if(e.key===' '||e.key==='Enter'){ e.preventDefault(); flipCard(); }
+    if(e.key==='ArrowRight'||e.key==='n') fcNav(1);
+    if(e.key==='ArrowLeft' ||e.key==='p') fcNav(-1);
+    if(e.key==='k') markCard(true);
+    if(e.key==='r') markCard(false);
+    if(e.key==='s') shuffleCards();
+    if(e.key==='Escape') closeFlash();
+    return;
+  }
+  if(searchOpen){ return; }
   if(e.target.tagName==='INPUT') return;
   if((e.ctrlKey||e.metaKey)&&e.key==='k'){ e.preventDefault(); openSearch(); return; }
   const i=IDS.indexOf(currentId);
   if(e.key===']'&&i<IDS.length-1) show(IDS[i+1]);
   if(e.key==='['&&i>0)            show(IDS[i-1]);
-  if(e.key==='Escape') closeFlash();
 });
 
 // ── Init ──
