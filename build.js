@@ -5,7 +5,7 @@
  */
 
 import { readFileSync, writeFileSync, mkdirSync, readdirSync } from 'fs';
-import { join, basename } from 'path';
+import { join } from 'path';
 import { marked } from 'marked';
 
 // ─── Config ──────────────────────────────────────────────────────────────────
@@ -104,6 +104,38 @@ function cleanObsidian(md, wikiMap = {}) {
 
 marked.use({ gfm: true, breaks: false });
 
+// ─── Flashcard extraction helper (defined once, not inside the loop) ──────────
+
+function extractFlashcards(html) {
+  const flashcards = [];
+  const fcSeen = new Set();
+
+  function addCard(front, back) {
+    const f = front.trim();
+    const b = back.replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
+    const key = f.toLowerCase();
+    if (f.length >= 2 && b.length >= 4 && !fcSeen.has(key)) {
+      fcSeen.add(key);
+      flashcards.push({ front: f, back: b });
+    }
+  }
+
+  // Pattern A: list item with **bold**: rest  or  **bold** — rest
+  const reA = /<li[^>]*>(?:<p>)?(?:<[^>]+>)*<strong>([^<]{2,80})<\/strong>(?:<\/[^>]+>)*\s*[:—–\-]+\s*([\s\S]{4,300}?)(?=<\/(?:li|p)>)/g;
+  let m;
+  while ((m = reA.exec(html)) !== null) addCard(m[1], m[2]);
+
+  // Pattern B: paragraph starting with **bold**: rest
+  const reB = /<p>(?:<[^>]+>)*<strong>([^<]{2,80})<\/strong>(?:<\/[^>]+>)*\s*[:—–\-]+\s*([^<]{4,300})/g;
+  while ((m = reB.exec(html)) !== null) addCard(m[1], m[2]);
+
+  // Pattern C: h3/h4 question → next paragraph answer
+  const reC = /<h[34][^>]*>([^<]{5,120})<\/h[34]>\s*(?:<[^/][^>]*>)*<p>([^<]{10,400})<\/p>/g;
+  while ((m = reC.exec(html)) !== null) addCard(m[1].replace(/<[^>]+>/g, ''), m[2]);
+
+  return flashcards;
+}
+
 // ─── Load pages ───────────────────────────────────────────────────────────────
 
 const PAGE_CONFIG = discoverPages();
@@ -125,32 +157,10 @@ for (const cfg of PAGE_CONFIG) {
     const { fm, body } = parseFM(raw);
     if (/LSAT Prep Hub/i.test(cfg.file)) hubFM = fm;
 
-    const html = marked.parse(cleanObsidian(body, wikiMap));
-
-    // Plain text for search index (capped at 3000 chars)
-    const text = html.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim().slice(0, 3000);
-
-    // Difficulty: easy | medium | hard (from frontmatter)
-    const difficulty = (fm.difficulty || '').toLowerCase();
-
-    // Flashcards: multi-pattern extraction
-    const flashcards = [];
-    const fcSeen = new Set();
-    function addCard(front, back) {
-      const f = front.trim(), b = back.replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
-      const key = f.toLowerCase();
-      if (f.length >= 2 && b.length >= 4 && !fcSeen.has(key)) { fcSeen.add(key); flashcards.push({ front: f, back: b }); }
-    }
-    // Pattern A: list item with **bold**: rest  or  **bold** — rest
-    const reA = /<li[^>]*>(?:<p>)?(?:<[^>]+>)*<strong>([^<]{2,80})<\/strong>(?:<\/[^>]+>)*\s*[:—–\-]+\s*([\s\S]{4,300}?)(?=<\/(?:li|p)>)/g;
-    let fm2;
-    while ((fm2 = reA.exec(html)) !== null) addCard(fm2[1], fm2[2]);
-    // Pattern B: paragraph starting with **bold**: rest
-    const reB = /<p>(?:<[^>]+>)*<strong>([^<]{2,80})<\/strong>(?:<\/[^>]+>)*\s*[:—–\-]+\s*([^<]{4,300})/g;
-    while ((fm2 = reB.exec(html)) !== null) addCard(fm2[1], fm2[2]);
-    // Pattern C: h3/h4 question → next paragraph answer
-    const reC = /<h[34][^>]*>([^<]{5,120})<\/h[34]>\s*(?:<[^/][^>]*>)*<p>([^<]{10,400})<\/p>/g;
-    while ((fm2 = reC.exec(html)) !== null) addCard(fm2[1].replace(/<[^>]+>/g, ''), fm2[2]);
+    const html        = marked.parse(cleanObsidian(body, wikiMap));
+    const text        = html.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim().slice(0, 3000);
+    const difficulty  = (fm.difficulty || '').toLowerCase();
+    const flashcards  = extractFlashcards(html);
 
     pages.push({ ...cfg, html, text, difficulty, flashcards, ok: true });
   } catch {
@@ -181,15 +191,25 @@ const practiceScores = hubFM.practice_scores
 function scorePct(s) { return Math.min(100, Math.max(0, Math.round(((s - 120) / 60) * 100))); }
 const curPct  = curScore ? scorePct(curScore) : 0;
 const tgtPct  = scorePct(tgtScore);
-const fillPct = curScore ? Math.round((curPct / tgtPct) * 100) : 0;
+// FIX: clamp fillPct to 100 so the bar never overflows (e.g. when curScore > tgtScore)
+const fillPct = curScore ? Math.min(100, Math.round((curPct / tgtPct) * 100)) : 0;
 
-// Days until test (null if we can't parse the date)
+// Days until test — null if unparseable; negative if date has passed
 function daysUntil(ds) {
   if (!ds) return null;
   const d = new Date(ds);
   return isNaN(d) ? null : Math.ceil((d - Date.now()) / 86400000);
 }
 const daysLeft = daysUntil(hubFM.test_date);
+
+// Human-readable countdown label: handles future, today, and past
+function countdownDisplay(days) {
+  if (days === null) return null;
+  if (days > 0)  return { num: days,  lbl: 'days until test' };
+  if (days === 0) return { num: '🎯', lbl: 'Test day!' };
+  return { num: Math.abs(days), lbl: 'days since test' };
+}
+const countdown = countdownDisplay(daysLeft);
 
 // ─── Score chart SVG (generated at build time) ────────────────────────────────
 
@@ -218,7 +238,7 @@ function makeScoreChart(scores) {
 
 const chartHTML = makeScoreChart(practiceScores);
 
-// ─── Build HTML pieces ───────────────────────────────────────────────────────
+// ─── Build HTML pieces ────────────────────────────────────────────────────────
 
 const sections = {};
 for (const p of pages) (sections[p.section] = sections[p.section] || []).push(p);
@@ -241,8 +261,8 @@ const navHTML = Object.entries(sections).map(([sec, ps]) => `
     </div>`).join('');
 
 const pagesHTML = pages.map(p => {
-  const hasFC = p.flashcards.length > 0;
-  const fcBtn = hasFC ? `<button class="hdr-btn" onclick="openFlash('${p.id}')" title="Flashcards (${p.flashcards.length})">🃏 ${p.flashcards.length}</button>` : '';
+  const hasFC    = p.flashcards.length > 0;
+  const fcBtn    = hasFC ? `<button class="hdr-btn" onclick="openFlash('${p.id}')" title="Flashcards (${p.flashcards.length})">🃏 ${p.flashcards.length}</button>` : '';
   const diffLabel = p.difficulty ? `<span class="diff-pill diff-${p.difficulty}">${p.difficulty}</span>` : '';
   return `
   <div class="page" id="page-${p.id}">
@@ -363,9 +383,10 @@ a:hover{text-decoration:underline}
 }
 .s-countdown-num{font-size:20px;font-weight:700;color:var(--accent);letter-spacing:-1px}
 .s-countdown-lbl{font-size:11px;color:var(--text3)}
+.s-countdown.past .s-countdown-num{color:var(--text2)}
 
 /* Nav */
-.s-nav{padding:6px 0 16px;flex:1}
+.s-nav{padding:6px 0 80px;flex:1}
 .s-nav-group{margin-top:2px}
 .s-nav-label{
   padding:10px 16px 3px;font-size:10.5px;font-weight:600;
@@ -531,10 +552,8 @@ a:hover{text-decoration:underline}
   background:none;border:none;font-size:18px;color:var(--text3);
   cursor:pointer;line-height:1;font-family:var(--font);padding:0;
 }
-/* progress track */
 .flash-track{height:2px;background:var(--border)}
 .flash-track-fill{height:100%;background:var(--accent);transition:width .3s}
-/* card scene */
 .flash-scene{
   perspective:1000px;padding:28px 28px 20px;cursor:pointer;min-height:180px;
   display:flex;align-items:center;justify-content:center;
@@ -550,20 +569,15 @@ a:hover{text-decoration:underline}
   min-height:130px;text-align:center;gap:8px;
 }
 .flash-face-back{
-  position:absolute;inset:0;
-  transform:rotateY(180deg);
+  position:absolute;inset:0;transform:rotateY(180deg);
   backface-visibility:hidden;-webkit-backface-visibility:hidden;
   display:flex;flex-direction:column;align-items:center;justify-content:center;
   min-height:130px;text-align:center;gap:8px;
 }
-.flash-side-label{
-  font-size:9px;font-weight:700;letter-spacing:1px;text-transform:uppercase;
-  color:var(--text3);
-}
+.flash-side-label{font-size:9px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--text3)}
 .flash-face-back .flash-side-label{color:var(--accent)}
 .flash-text{font-size:15px;color:var(--text);line-height:1.6;padding:0 4px}
 .flash-hint{font-size:11px;color:var(--text3);text-align:center;padding:0 28px 8px}
-/* bottom controls */
 .flash-controls{
   display:flex;gap:8px;padding:12px 16px 16px;
   border-top:1px solid var(--border-s);align-items:center;
@@ -593,6 +607,8 @@ a:hover{text-decoration:underline}
   .page-header{top:var(--topbar);padding:16px 16px 12px;flex-wrap:wrap}
   .page-body{padding:16px 16px 32px}
   #search-modal{padding-top:24px;align-items:flex-start}
+  /* FIX: mood banner full-width on mobile so it doesn't overlap content */
+  #mood-banner{width:100%!important}
 }
 
 /* ── Print ── */
@@ -645,21 +661,21 @@ a:hover{text-decoration:underline}
     ${chartHTML}
   </div>
 
-  ${daysLeft !== null ? `
-  <div class="s-countdown">
+  ${countdown !== null ? `
+  <div class="s-countdown${daysLeft !== null && daysLeft <= 0 ? ' past' : ''}">
     <div>
-      <div class="s-countdown-num">${daysLeft}</div>
-      <div class="s-countdown-lbl">days until test</div>
+      <div class="s-countdown-num">${countdown.num}</div>
+      <div class="s-countdown-lbl">${countdown.lbl}</div>
     </div>
-    <div style="font-size:24px">⏳</div>
+    <div style="font-size:24px">${daysLeft !== null && daysLeft <= 0 ? '🎓' : '⏳'}</div>
   </div>` : ''}
 
   <div class="s-nav">${navHTML}
   </div>
 </div>
 
-<!-- Search modal -->
-<div id="search-modal" onclick="e => { if(e.target===this) closeSearch() }">
+<!-- Search modal: backdrop click handled by addEventListener below, not inline onclick -->
+<div id="search-modal">
   <div id="search-box">
     <input id="search-input" placeholder="Search notes…" autocomplete="off" spellcheck="false">
     <div id="search-results"></div>
@@ -707,7 +723,7 @@ a:hover{text-decoration:underline}
   </div>
 </div>
 
-<!-- Confidence poll (shown in sidebar bottom) -->
+<!-- Confidence poll — fixed to sidebar bottom -->
 <div id="mood-banner" style="display:none;position:fixed;bottom:0;left:0;width:var(--sw);padding:10px 12px;background:var(--surf);border-top:1px solid var(--border);z-index:201">
   <div style="font-size:11px;color:var(--text3);margin-bottom:6px;font-weight:500">How's your study confidence today?</div>
   <div style="display:flex;justify-content:space-between">
@@ -753,8 +769,9 @@ let _tx=0;
 document.addEventListener('touchstart',e=>{ _tx=e.touches[0].clientX; },{passive:true});
 document.addEventListener('touchend',e=>{
   const dx=e.changedTouches[0].clientX-_tx;
-  if(dx> 60&&_tx<24) openSidebar();
-  if(dx<-60)          closeSidebar();
+  const sb=document.getElementById('sidebar');
+  if(dx> 60&&_tx<24&&!sb.classList.contains('open')) openSidebar();
+  if(dx<-60&&sb.classList.contains('open'))           closeSidebar();
 },{passive:true});
 
 // ── Theme toggle ──
@@ -765,9 +782,13 @@ function toggleTheme() {
   document.getElementById('theme-btn').textContent=light?'🌙':'☀️';
   try{ localStorage.setItem('lsat-theme', light?'dark':'light'); }catch(_){}
 }
+// FIX: script runs at bottom of body — DOM is ready, no DOMContentLoaded needed
 (function(){
   const t=localStorage.getItem('lsat-theme');
-  if(t){ document.documentElement.setAttribute('data-theme',t); document.addEventListener('DOMContentLoaded',()=>{ const b=document.getElementById('theme-btn'); if(b) b.textContent=t==='light'?'☀️':'🌙'; }); }
+  if(!t) return;
+  document.documentElement.setAttribute('data-theme',t);
+  const b=document.getElementById('theme-btn');
+  if(b) b.textContent=t==='light'?'☀️':'🌙';
 })();
 
 // ── Reading progress bar ──
@@ -775,7 +796,7 @@ window.addEventListener('scroll',()=>{
   const el=document.getElementById('progress-bar');
   if(!el) return;
   const h=document.documentElement;
-  const pct=(h.scrollTop||document.body.scrollTop)/(h.scrollHeight-h.clientHeight)*100;
+  const pct=h.scrollTop/(h.scrollHeight-h.clientHeight)*100;
   el.style.width=Math.min(100,pct)+'%';
 },{passive:true});
 
@@ -789,6 +810,7 @@ function openSearch(){
 function closeSearch(){
   document.getElementById('search-modal').classList.remove('open');
 }
+function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
 function renderResults(q){
   const box=document.getElementById('search-results');
   const term=q.trim().toLowerCase();
@@ -798,14 +820,15 @@ function renderResults(q){
     p.section.toLowerCase().includes(term)||
     p.text.toLowerCase().includes(term)
   ).slice(0,12);
-  if(!hits.length){ box.innerHTML='<div class="sr-empty">No results for "'+q+'"</div>'; return; }
+  if(!hits.length){ box.innerHTML='<div class="sr-empty">No results for "'+esc(q)+'"</div>'; return; }
   box.innerHTML=hits.map((p,i)=>{
     const idx=p.text.toLowerCase().indexOf(term);
-    const excerpt=idx>=0?'…'+p.text.slice(Math.max(0,idx-30),idx+60)+'…':'';
-    return \`<div class="sr-item\${i===_sfocus?' focused':''}" onclick="show('\${p.id}');closeSearch()">
+    const raw=idx>=0?'…'+p.text.slice(Math.max(0,idx-30),idx+60)+'…':'';
+    const excerpt=esc(raw);
+    return \`<div class="sr-item\${i===_sfocus?' focused':''}" onclick="show('\${esc(p.id)}');closeSearch()">
       <span class="sr-icon">\${p.icon}</span>
-      <div style="flex:1;min-width:0"><div class="sr-label">\${p.label}</div>\${excerpt?'<div class="sr-excerpt">'+excerpt+'</div>':''}</div>
-      <span class="sr-section">\${p.section}</span>
+      <div style="flex:1;min-width:0"><div class="sr-label">\${esc(p.label)}</div>\${excerpt?'<div class="sr-excerpt">'+excerpt+'</div>':''}</div>
+      <span class="sr-section">\${esc(p.section)}</span>
     </div>\`;
   }).join('');
 }
@@ -817,7 +840,10 @@ document.getElementById('search-input').addEventListener('keydown',e=>{
   if(e.key==='Enter'     ){ if(items[_sfocus]) items[_sfocus].click(); }
   if(e.key==='Escape'    ){ closeSearch(); }
 });
-document.getElementById('search-modal').addEventListener('click',e=>{ if(e.target===document.getElementById('search-modal')) closeSearch(); });
+// FIX: single, correct click-outside handler — no broken inline onclick on the element
+document.getElementById('search-modal').addEventListener('click',e=>{
+  if(e.target===document.getElementById('search-modal')) closeSearch();
+});
 
 // ── Flashcards ──
 let _fc={cards:[],idx:0,flipped:false,know:0,idk:0};
@@ -834,6 +860,8 @@ function closeFlash(){
   document.body.style.overflow='';
 }
 function renderCard(){
+  // FIX: guard against empty deck — should never happen via openFlash, but defensive
+  if(!_fc.cards.length) return;
   const c=_fc.cards[_fc.idx];
   document.getElementById('flash-counter').textContent=(_fc.idx+1)+' / '+_fc.cards.length;
   document.getElementById('flash-front').textContent=c.front;
@@ -883,7 +911,7 @@ function loadBoxes(){
 function setMastery(id,level){
   try{
     const m=JSON.parse(localStorage.getItem('lsat-mastery')||'{}');
-    m[id]=m[id]===level?0:level; // toggle off if same
+    m[id]=m[id]===level?0:level;
     localStorage.setItem('lsat-mastery',JSON.stringify(m));
   }catch(_){}
   renderMastery();
@@ -891,12 +919,10 @@ function setMastery(id,level){
 function renderMastery(){
   try{
     const m=JSON.parse(localStorage.getItem('lsat-mastery')||'{}');
-    // Update mastery buttons in page headers
     document.querySelectorAll('.m-btn').forEach(btn=>{
       const id=btn.dataset.id, lv=parseInt(btn.dataset.level);
       btn.classList.toggle('active', m[id]===lv);
     });
-    // Update sidebar nav dots
     document.querySelectorAll('.s-nav-item[id^="nav-"]').forEach(item=>{
       const id=item.id.slice(4);
       const lv=m[id]||0;
@@ -908,14 +934,17 @@ function renderMastery(){
 }
 
 // ── Mood / confidence poll ──
-const MOODS=['😰','😐','🙂','💪','🔥'];
-const MOOD_LABELS=['Struggling','Unsure','Okay','Confident','On fire!'];
-function todayKey(){ const d=new Date(); return d.getFullYear()+'-'+(d.getMonth()+1)+'-'+d.getDate(); }
+// FIX: zero-pad month and day so ISO-style string sort is chronologically correct
+function todayKey(){
+  const d=new Date();
+  const mm=String(d.getMonth()+1).padStart(2,'0');
+  const dd=String(d.getDate()).padStart(2,'0');
+  return d.getFullYear()+'-'+mm+'-'+dd;
+}
 function setMood(v){
   try{
     const h=JSON.parse(localStorage.getItem('lsat-mood')||'{}');
     h[todayKey()]=v;
-    // keep last 30 days only
     const keys=Object.keys(h).sort();
     if(keys.length>30) keys.slice(0,-30).forEach(k=>delete h[k]);
     localStorage.setItem('lsat-mood',JSON.stringify(h));
@@ -932,7 +961,6 @@ function renderMood(){
       el.style.opacity=todayVal===v?'1':todayVal&&v<todayVal?'0.6':'0.4';
       el.style.transform=todayVal===v?'scale(1.3)':'scale(1)';
     });
-    // Sparkline: last 7 days
     const keys=Object.keys(h).sort().slice(-7);
     const hist=document.getElementById('mood-history');
     if(hist&&keys.length>1){
@@ -946,7 +974,6 @@ function renderMood(){
         </div>\`;
       }).join('');
     }
-    // Show mood banner only if not answered today or show for a moment
     const banner=document.getElementById('mood-banner');
     if(banner) banner.style.display='block';
   }catch(_){}
@@ -966,7 +993,7 @@ document.addEventListener('keydown',e=>{
     if(e.key==='Escape') closeFlash();
     return;
   }
-  if(searchOpen){ return; }
+  if(searchOpen) return;
   if(e.target.tagName==='INPUT') return;
   if((e.ctrlKey||e.metaKey)&&e.key==='k'){ e.preventDefault(); openSearch(); return; }
   const i=IDS.indexOf(currentId);
