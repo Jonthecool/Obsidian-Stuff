@@ -133,13 +133,24 @@ for (const cfg of PAGE_CONFIG) {
     // Difficulty: easy | medium | hard (from frontmatter)
     const difficulty = (fm.difficulty || '').toLowerCase();
 
-    // Flashcards: extract **term**: definition patterns from HTML
+    // Flashcards: multi-pattern extraction
     const flashcards = [];
-    const fcRe = /<(?:li|p)[^>]*>.*?<strong>([^<]{2,60})<\/strong>\s*[:—–\-]\s*([^<]{4,})/g;
-    let fm2;
-    while ((fm2 = fcRe.exec(html)) !== null) {
-      flashcards.push({ front: fm2[1].trim(), back: fm2[2].replace(/<[^>]+>/g, '').trim() });
+    const fcSeen = new Set();
+    function addCard(front, back) {
+      const f = front.trim(), b = back.replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
+      const key = f.toLowerCase();
+      if (f.length >= 2 && b.length >= 4 && !fcSeen.has(key)) { fcSeen.add(key); flashcards.push({ front: f, back: b }); }
     }
+    // Pattern A: list item with **bold**: rest  or  **bold** — rest
+    const reA = /<li[^>]*>(?:<p>)?(?:<[^>]+>)*<strong>([^<]{2,80})<\/strong>(?:<\/[^>]+>)*\s*[:—–\-]+\s*([\s\S]{4,300}?)(?=<\/(?:li|p)>)/g;
+    let fm2;
+    while ((fm2 = reA.exec(html)) !== null) addCard(fm2[1], fm2[2]);
+    // Pattern B: paragraph starting with **bold**: rest
+    const reB = /<p>(?:<[^>]+>)*<strong>([^<]{2,80})<\/strong>(?:<\/[^>]+>)*\s*[:—–\-]+\s*([^<]{4,300})/g;
+    while ((fm2 = reB.exec(html)) !== null) addCard(fm2[1], fm2[2]);
+    // Pattern C: h3/h4 question → next paragraph answer
+    const reC = /<h[34][^>]*>([^<]{5,120})<\/h[34]>\s*(?:<[^/][^>]*>)*<p>([^<]{10,400})<\/p>/g;
+    while ((fm2 = reC.exec(html)) !== null) addCard(fm2[1].replace(/<[^>]+>/g, ''), fm2[2]);
 
     pages.push({ ...cfg, html, text, difficulty, flashcards, ok: true });
   } catch {
@@ -241,6 +252,12 @@ const pagesHTML = pages.map(p => {
         <p class="page-meta">Updated ${buildStr}</p>
       </div>
       <div class="ph-right">
+        <div class="mastery-widget" id="mastery-${p.id}" title="Rate your mastery of this topic">
+          <span class="mastery-lbl">Mastery</span>
+          <button class="m-btn" data-id="${p.id}" data-level="1" onclick="setMastery('${p.id}',1)" title="Need to review">🔴</button>
+          <button class="m-btn" data-id="${p.id}" data-level="2" onclick="setMastery('${p.id}',2)" title="Still learning">🟡</button>
+          <button class="m-btn" data-id="${p.id}" data-level="3" onclick="setMastery('${p.id}',3)" title="Got it">🟢</button>
+        </div>
         ${fcBtn}
         <button class="hdr-btn" onclick="window.print()" title="Print">⎙</button>
       </div>
@@ -478,6 +495,20 @@ a:hover{text-decoration:underline}
   border-radius:4px;font-size:10px;font-family:monospace;
 }
 
+/* ── Mastery widget ── */
+.mastery-widget{
+  display:flex;align-items:center;gap:4px;padding:4px 8px;
+  border-radius:7px;border:1px solid var(--border);background:var(--surf2);
+}
+.mastery-lbl{font-size:10px;color:var(--text3);margin-right:2px;white-space:nowrap}
+.m-btn{
+  background:none;border:none;font-size:14px;cursor:pointer;
+  padding:2px 3px;border-radius:4px;opacity:.35;transition:opacity .1s,transform .1s;
+  line-height:1;
+}
+.m-btn:hover{opacity:.75;transform:scale(1.15)}
+.m-btn.active{opacity:1;transform:scale(1.2)}
+
 /* ── Flashcard modal ── */
 #flash-modal{
   display:none;position:fixed;inset:0;z-index:500;
@@ -486,29 +517,72 @@ a:hover{text-decoration:underline}
 }
 #flash-modal.open{display:flex}
 #flash-box{
-  width:100%;max-width:480px;background:var(--surf);border:1px solid var(--border);
-  border-radius:14px;padding:32px 28px;text-align:center;
-  box-shadow:0 24px 80px rgba(0,0,0,.5);position:relative;
+  width:100%;max-width:500px;margin:16px;background:var(--surf);
+  border:1px solid var(--border);border-radius:16px;
+  box-shadow:0 24px 80px rgba(0,0,0,.5);overflow:hidden;position:relative;
 }
-#flash-counter{font-size:11px;color:var(--text3);margin-bottom:20px}
-#flash-card{
-  min-height:120px;display:flex;align-items:center;justify-content:center;
-  font-size:15px;color:var(--text);line-height:1.6;padding:0 8px;cursor:pointer;
-  user-select:none;
+.flash-topbar{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:12px 16px;border-bottom:1px solid var(--border-s);
 }
-#flash-hint{font-size:11px;color:var(--text3);margin-top:12px}
-.flash-actions{display:flex;gap:10px;justify-content:center;margin-top:20px}
+.flash-title{font-size:12px;font-weight:600;color:var(--text2)}
+.flash-meta{font-size:11px;color:var(--text3)}
+#flash-close{
+  background:none;border:none;font-size:18px;color:var(--text3);
+  cursor:pointer;line-height:1;font-family:var(--font);padding:0;
+}
+/* progress track */
+.flash-track{height:2px;background:var(--border)}
+.flash-track-fill{height:100%;background:var(--accent);transition:width .3s}
+/* card scene */
+.flash-scene{
+  perspective:1000px;padding:28px 28px 20px;cursor:pointer;min-height:180px;
+  display:flex;align-items:center;justify-content:center;
+}
+.flash-flipper{
+  position:relative;width:100%;transition:transform .45s cubic-bezier(.4,0,.2,1);
+  transform-style:preserve-3d;
+}
+.flash-flipper.flipped{transform:rotateY(180deg)}
+.flash-face{
+  backface-visibility:hidden;-webkit-backface-visibility:hidden;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  min-height:130px;text-align:center;gap:8px;
+}
+.flash-face-back{
+  position:absolute;inset:0;
+  transform:rotateY(180deg);
+  backface-visibility:hidden;-webkit-backface-visibility:hidden;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  min-height:130px;text-align:center;gap:8px;
+}
+.flash-side-label{
+  font-size:9px;font-weight:700;letter-spacing:1px;text-transform:uppercase;
+  color:var(--text3);
+}
+.flash-face-back .flash-side-label{color:var(--accent)}
+.flash-text{font-size:15px;color:var(--text);line-height:1.6;padding:0 4px}
+.flash-hint{font-size:11px;color:var(--text3);text-align:center;padding:0 28px 8px}
+/* bottom controls */
+.flash-controls{
+  display:flex;gap:8px;padding:12px 16px 16px;
+  border-top:1px solid var(--border-s);align-items:center;
+}
 .flash-btn{
-  padding:8px 20px;border-radius:8px;border:1px solid var(--border);
-  background:var(--surf2);color:var(--text2);font-size:13px;
-  font-family:var(--font);cursor:pointer;transition:background .1s;
+  flex:1;padding:8px 12px;border-radius:8px;border:1px solid var(--border);
+  background:var(--surf2);color:var(--text2);font-size:12.5px;
+  font-family:var(--font);cursor:pointer;transition:background .1s;font-weight:500;
 }
 .flash-btn:hover{background:var(--surf3);color:var(--text)}
-.flash-btn.primary{background:var(--accent-d);color:var(--accent);border-color:transparent}
-#flash-close{
-  position:absolute;top:12px;right:14px;font-size:18px;color:var(--text3);
-  cursor:pointer;line-height:1;background:none;border:none;font-family:var(--font);
+.flash-btn.know{background:var(--green-d);color:var(--green);border-color:transparent}
+.flash-btn.idk {background:rgba(255,69,58,.1);color:var(--red);border-color:transparent}
+.flash-session{
+  display:flex;gap:12px;justify-content:center;padding:0 16px 10px;
+  font-size:11px;color:var(--text3);
 }
+.flash-session span b{font-weight:600}
+.flash-session .know-c b{color:var(--green)}
+.flash-session .idk-c  b{color:var(--red)}
 
 /* ── Responsive ── */
 @media(max-width:768px){
