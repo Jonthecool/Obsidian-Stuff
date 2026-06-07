@@ -447,6 +447,25 @@ const HTML = `<!DOCTYPE html>
 
   ${countdownHtml}
 
+  <div class="s-links">
+    <div class="s-links-label">Quick Links</div>
+    <a class="s-link-item" href="https://lawhub.org" target="_blank" rel="noopener noreferrer">
+      <span class="s-nav-icon">⚖️</span>
+      <span>LawHub</span>
+      <span class="s-link-arrow">↗</span>
+    </a>
+    <a class="s-link-item" href="https://7sage.com" target="_blank" rel="noopener noreferrer">
+      <span class="s-nav-icon">🎯</span>
+      <span>7Sage</span>
+      <span class="s-link-arrow">↗</span>
+    </a>
+    <a class="s-link-item" href="https://lsatdemon.com" target="_blank" rel="noopener noreferrer">
+      <span class="s-nav-icon">😈</span>
+      <span>LSAT Demon</span>
+      <span class="s-link-arrow">↗</span>
+    </a>
+  </div>
+
   <div class="s-nav">${navHtml}
   </div>
 </div>

@@ -219,6 +219,37 @@ a:hover { text-decoration: underline; }
 .s-nav-label-text { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .diff-dot         { font-size: 9px; flex-shrink: 0; opacity: .8; }
 
+/* ─── Quick links (sidebar) ──────────────────────────────────────────────── */
+
+.s-links { padding: 4px 0 2px; flex-shrink: 0; }
+
+.s-links-label {
+  padding: 10px 16px 3px;
+  font-size: 10.5px;
+  font-weight: 600;
+  color: var(--text3);
+  text-transform: uppercase;
+  letter-spacing: .8px;
+}
+
+.s-link-item {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 5px 14px;
+  margin: 1px 8px;
+  border-radius: 6px;
+  font-size: 13px;
+  color: var(--text2);
+  text-decoration: none;
+  transition: background .1s, color .1s;
+  user-select: none;
+}
+.s-link-item:hover { background: var(--surf2); color: var(--text); text-decoration: none; }
+
+.s-link-arrow { margin-left: auto; font-size: 11px; opacity: .4; transition: opacity .1s; }
+.s-link-item:hover .s-link-arrow { opacity: .8; }
+
 /* ─── Backdrop overlay (mobile) ──────────────────────────────────────────── */
 
 #overlay { display: none; position: fixed; inset: 0; z-index: 199; background: rgba(0, 0, 0, .55); backdrop-filter: blur(2px); }
