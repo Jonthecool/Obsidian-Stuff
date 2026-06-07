@@ -107,10 +107,10 @@ related: "[[LSAT Prep Hub]], [[Practice Test Log]]"
 ## Key Context
 - **GPA is a genuine strength** — 3.90 is at or above median for every reach school and most dream schools
 - **LSAT is the primary variable** — GPA alone cannot compensate for a significant LSAT deficit at T14 schools
-- **Kutztown is a regional school** — admissions offices know it; strong GPA there is credible but not the same weight as a flagship university
+- **Kutztown University** — solid regional institution; 3.90 GPA demonstrates consistent academic performance and work ethic
 - **NJ residency helps** — Rutgers and Seton Hall both have geographic appeal
-- **Personal statement narrative** — ADHD, self-directed prep, sustained commitments is a strong and distinctive story
-- **No formal pre-law experience yet** — shadow a lawyer, consider paralegal work or legal internship before applying
+- **Personal statement narrative** — overcoming personal challenges, self-directed study, and sustained long-term commitments is a strong and distinctive story
+- **Building pre-law experience** — shadowing, paralegal work, or a legal internship before applying will strengthen the application significantly
 
 ---
 
