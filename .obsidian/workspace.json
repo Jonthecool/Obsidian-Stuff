@@ -34,6 +34,16 @@
               "icon": "lucide-file",
               "title": "LSAT Key Concepts & Terminology"
             }
+          },
+          {
+            "id": "d0b8c8c98ee2173f",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
           }
         ],
         "currentTab": 1
@@ -201,8 +211,8 @@
   },
   "active": "30b6b76b8410e35e",
   "lastOpenFiles": [
-    "LSAT Prep/Error Log.md",
     "LSAT Prep/LSAT Key Concepts & Terminology.md",
+    "LSAT Prep/Error Log.md",
     "build.js.tmp.52736.1220ca3153b7",
     "src/client.js",
     "src/style.css",
