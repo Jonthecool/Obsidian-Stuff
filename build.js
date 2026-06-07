@@ -979,6 +979,8 @@ const hash=location.hash.slice(1);
 const last=localStorage.getItem('lsat-last');
 show(IDS.includes(hash)?hash : IDS.includes(last)?last : DEFAULT);
 loadBoxes();
+renderMastery();
+renderMood();
 </script>
 </body>
 </html>`;
