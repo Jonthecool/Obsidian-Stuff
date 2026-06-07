@@ -205,7 +205,9 @@ for (const cfg of PAGE_CONFIG) {
     const { fm, body} = parseFM(raw);
     if (/LSAT Prep Hub/i.test(cfg.file)) hubFM = fm;
 
-    const html       = marked.parse(cleanObsidian(body, wikiMap));
+    // Add target="_blank" to every external link so they never navigate away from the app.
+    const html       = marked.parse(cleanObsidian(body, wikiMap))
+      .replace(/<a href="(https?:\/\/[^"]+)"/g, '<a target="_blank" rel="noopener noreferrer" href="$1"');
     const text       = html.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim().slice(0, 3000);
     const difficulty = (fm.difficulty || '').toLowerCase();
     const flashcards = NO_FLASH_SECTIONS.has(cfg.section) ? [] : extractFlashcards(html);
