@@ -13,7 +13,9 @@ import { marked } from 'marked';
 const VAULT = 'LSAT Prep';
 const OUT   = 'docs';
 
-const SECTION_ORDER = ['Overview', 'Logical Reasoning', 'Reading Comprehension', 'Progress', 'Other'];
+const SECTION_ORDER    = ['Overview', 'Logical Reasoning', 'Reading Comprehension', 'Progress', 'Other'];
+// Sections whose notes are organizational (logs, hub, checklists) — skip flashcard extraction
+const NO_FLASH_SECTIONS = new Set(['Overview', 'Progress']);
 
 const CATEGORY_RULES = [
   { pattern: /LSAT Prep Hub/i,           section: 'Overview',              icon: '🏠' },
@@ -114,6 +116,11 @@ function extractFlashcards(html) {
     const f = front.trim();
     const b = back.replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
     const key = f.toLowerCase();
+    // Quality filters — reject non-study content before adding
+    if (b.endsWith(':'))                          return; // section lead-in, not an answer
+    if (/^Near\s/i.test(f))                       return; // location header ("Near Kutztown, PA")
+    if (f.includes('http') || b.includes('http')) return; // URL leaked into card text
+    if (/,\s*[A-Z]{2}$/.test(f))                 return; // "City, ST" location format
     if (f.length >= 2 && b.length >= 4 && !fcSeen.has(key)) {
       fcSeen.add(key);
       flashcards.push({ front: f, back: b });
@@ -160,7 +167,7 @@ for (const cfg of PAGE_CONFIG) {
     const html        = marked.parse(cleanObsidian(body, wikiMap));
     const text        = html.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim().slice(0, 3000);
     const difficulty  = (fm.difficulty || '').toLowerCase();
-    const flashcards  = extractFlashcards(html);
+    const flashcards  = NO_FLASH_SECTIONS.has(cfg.section) ? [] : extractFlashcards(html);
 
     pages.push({ ...cfg, html, text, difficulty, flashcards, ok: true });
   } catch {
