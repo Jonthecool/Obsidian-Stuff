@@ -109,7 +109,7 @@ related: "[[LSAT Prep Hub]], [[Practice Test Log]]"
 - **LSAT is the primary variable** — GPA alone cannot compensate for a significant LSAT deficit at T14 schools
 - **Kutztown is a regional school** — admissions offices know it; strong GPA there is credible but not the same weight as a flagship university
 - **NJ residency helps** — Rutgers and Seton Hall both have geographic appeal
-- **Personal statement narrative** — neurodivergence, self-directed prep, sustained commitments is a strong and distinctive story
+- **Personal statement narrative** — ADHD, self-directed prep, sustained commitments is a strong and distinctive story
 - **No formal pre-law experience yet** — shadow a lawyer, consider paralegal work or legal internship before applying
 
 ---
