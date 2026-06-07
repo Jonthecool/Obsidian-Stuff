@@ -201,6 +201,7 @@
   },
   "active": "30b6b76b8410e35e",
   "lastOpenFiles": [
+    "src/client.js",
     "src/style.css",
     "src",
     "LSAT Prep Hub]], [[LR - Argument Structure]], [[LR - Question Types]], [[LR - Common Flaws.md",
@@ -232,7 +233,6 @@
     "LSAT Prep/LR - Question Types.md",
     "node_modules/marked/bin/main.js",
     "node_modules/marked/bin/marked.js",
-    "node_modules/marked/bin",
     "node_modules/marked/man/marked.1.md",
     "Claude/TestNote.md",
     "LSAT Prep/LR - Common Flaws.md",
