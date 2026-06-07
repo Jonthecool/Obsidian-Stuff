@@ -201,6 +201,7 @@
   },
   "active": "30b6b76b8410e35e",
   "lastOpenFiles": [
+    "build.js.tmp.52736.d530ed7f0051",
     "build.js.tmp.52736.e45c7a6c3462",
     "LSAT Prep/Update Log.md",
     "LSAT Prep/Vocabulary Log.md",
@@ -231,7 +232,6 @@
     "node_modules/marked/bin",
     "docs/index.html",
     "docs",
-    "node_modules/marked/lib/marked.umd.js",
     "node_modules/marked/man/marked.1.md",
     "Claude/TestNote.md",
     "LSAT Prep/LR - Common Flaws.md",
