@@ -222,3 +222,57 @@ Supported, Paradox, Disagree, Flaw, Necessary Assumption, Conclusion, Flaw, Nece
 - Techniques/Roles/Principles is the #1 untimed weakness (still missing in blind review)
 - Social science passages remain the RC weak spot
 - Law passages in RC also showing weakness on diagnostic (contradicts blind review where law passages were strong — worth monitoring)
+
+---
+
+### Drill Set 1 — LR (June 8, 2026)
+- **Date:** June 8, 2026
+- **Source:** LawHub Advantage — Logical Reasoning Drill Set 1
+- **Session type:** Drill Set (untimed)
+- **Score:** 3/12 (25%)
+- **Elapsed Time:** 27m 24s
+- **Assistance:** Google used for 1-2 vocabulary lookups only — clean score, no answer assistance
+- **Tools used:** LawHub highlighter for tracing — helped with reading speed and focus
+
+**Full Question Breakdown:**
+
+| Q | Type | Result | Chosen | Correct | Difficulty |
+|---|------|--------|--------|---------|------------|
+| 1 | Conclusions and Disputes | ❌ | A | E | Level 2 |
+| 2 | Deductions and Inferences | ✅ | A | A | Level 1 |
+| 3 | Strengthen or Weaken | ❌ | C | A | Level 3 |
+| 4 | Assumptions | ❌ | E | A | Level 3 |
+| 5 | Matching Structure and Principles | ❌ | C | A | Level 2 |
+| 6 | Flaws | ✅ | B | B | Level 3 |
+| 7 | Explain or Resolve | ❌ | A | D | Level 2 |
+| 8 | Deductions and Inferences | ❌ | B | A | Level 4 |
+| 9 | Techniques, Roles and Principles | ✅ | D | D | Level 2 |
+| 10 | Techniques, Roles and Principles | ❌ | E | C | Level 3 |
+| 11 | Assumptions | ❌ | E | B | Level 1 |
+| 12 | Flaws | ❌ | D | A | Level 1 |
+
+**Missed question analysis:**
+
+- **Q1 (Conclusions and Disputes):** Chose A — broadened the disagreement to "any genetic research" when the stimulus was specifically about altering genetic material. Classic scope creep — the LSAT punishes broadening beyond what's in the passage.
+- **Q3 (Strengthen or Weaken):** Chose C (measures to disseminate info about the law) — irrelevant to whether the law would actually reduce injuries. A worked because most repetitive stress injuries happen at businesses with 9+ employees — directly in the law's scope.
+- **Q4 (Assumptions):** Chose E (more patents issued last year than this year) — scope error. The argument only claims fewer patents than there WOULD HAVE BEEN without the law, not fewer than last year. A was the necessary bridge: without the law, some computer algorithms would have received patents.
+- **Q5 (Matching Structure):** Chose C — different logical structure. Original pattern: All X are Y, Some Z are not Y, therefore Some Z are not X. C had: All X are Y, Some Y are not Z, therefore Some X are not Z. A matched exactly.
+- **Q7 (Explain/Resolve):** Chose A (most scientists produce mediocre work) — doesn't explain why PROMINENT ones produce MORE of it. D resolved it: total output increases with prominence, so mediocre work increases proportionally.
+- **Q8 (Deductions/Inferences):** Chose B — too broad. Claimed any reduction in heat radiating back would reduce heat from the sun, but passage only gave info about one specific cause (higher CO2/water vapor). Scope error again.
+- **Q10 (Techniques, Roles and Principles):** Chose E — missed the role of the specific claim in the argument structure.
+- **Q11 (Assumptions):** Debated between B and E, chose E. E said people who dislike modern art don't know anyone enthusiastic enough to change their mind — social influence not mentioned in passage. B was the direct analogy completion: just like baseball fans overcame dislike through familiarity, modern art dislikers haven't become familiar enough yet. Follow the analogy directly.
+- **Q12 (Flaws):** Chose D (ad hominem) — neither Felicia nor Matt attacked each other's character. A was correct: hasty generalization — both drew broad conclusions from a single example. Note: this question appeared in diagnostic blind review as well.
+
+**Error patterns:**
+1. **Scope creep** — repeatedly choosing answers that go slightly outside what the passage actually says (Q1, Q3, Q8, Q11)
+2. **Assumptions** — 0/2, genuine content gap, both missed
+3. **Flaw identification** — 1/2, missed the Level 1 hasty generalization on Q12 despite getting a harder flaw right on Q6
+4. **Matching Structure** — misidentified the logical pattern
+
+**Key takeaway:**
+25% is true unassisted baseline on formal LR drilling. Most wrong answers resulted from adding information beyond what the passage supports — the LSAT only rewards what the passage directly supports, nothing more. Reading the full LawHub explanations for all 12 questions is the assigned next step before attempting Drill Set 2. Highlighter tool helped with focus and reading pace — continue using.
+
+**Next steps:**
+- Read all 12 explanations in full
+- Read Jack's book Stage 1 on argument structure before next drill set
+- Priority question types to study: Assumptions, Scope/Inference rules, Flaw identification

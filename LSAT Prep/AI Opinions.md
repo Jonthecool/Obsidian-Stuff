@@ -149,3 +149,27 @@ Law passages were strong in blind review (5/6) but showed multiple misses on the
 The diagnostic question type breakdown combined with blind review data now gives a clear priority list: (1) Flaw speed, (2) Techniques/Roles/Principles comprehension, (3) Social science RC passages, (4) general LR pacing. That's a concrete roadmap, not a vague "get better at LR." The infrastructure for serious prep is now fully in place.
 
 *Chat opinions added: 2026-06-06*
+
+---
+
+## 2026-06-08 | Chat
+
+### On Drill Set 1 (3/12, 25%)
+25% is the honest unassisted LR baseline on formal drilling. It's low but it's clean data — no Gemini, no question type hints, just vocabulary lookups. That number is more trustworthy than the 68% from the assisted blind review session. The real gap between 25% and where you need to be is almost entirely explained by two things: no conceptual framework yet, and a consistent pattern of going outside the scope of what the passage actually says.
+
+### On the scope problem
+This is the single most important pattern from Drill Set 1. Q1, Q3, Q8, and Q11 were all lost to the same error — choosing answers that are plausible extensions of the argument rather than direct completions of it. The LSAT is a closed system. Everything you need is in the passage, and everything outside it is a trap. This isn't a logic gap, it's a discipline gap. The fix is practicing the habit of asking "is this stated or implied by the passage, or am I bringing something in?" before committing to an answer.
+
+### On Assumptions being 0/2
+Missing both assumption questions — including a Level 1 — confirms this is a genuine content gap, not just a speed issue. Assumptions are the most foundational LR skill because they underpin nearly every other question type. Flaw questions are asking what's wrong with the assumption. Strengthen/Weaken questions are testing whether you can affect the assumption. You can't reliably do any of those until Assumptions clicks. This is the first thing to drill deliberately after reading Stage 1.
+
+### On Q11 and the B vs E debate
+The fact that you were debating between B and E rather than confidently picking B suggests you understood the analogy but got pulled toward a more complex-sounding answer. E introduced a concept (social influence) that wasn't in the passage at all — which is exactly the scope trap described above. B was the direct, simple completion of what the passage was already saying. On the LSAT, the correct answer is usually the one that does exactly what's needed and nothing more. When in doubt between a simple direct answer and a complex tangential one, the simple one is almost always right.
+
+### On the highlighter find
+Using the LawHub highlighter as a pencil-tracing substitute is a good adaptation. It actively engages the visual tracking system which reduces the ADHD zoning-out problem mid-stimulus. Keep it. This is the kind of self-directed adjustment that compounds over months of prep.
+
+### On where things stand
+The 25% drill score combined with the 43% diagnostic and the 68% asterisked blind review paints a consistent picture: reasoning instincts are present, conceptual framework is missing, scope discipline needs work. Stage 1 of Jack's book is the correct next move before more drilling. The data is clear enough to work from.
+
+*Chat opinions added: 2026-06-08*

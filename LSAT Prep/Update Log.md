@@ -31,6 +31,8 @@ related: "[[LSAT Prep Hub]]"
 | 17 | 2026-06-06 | — | — | EDT | [[Law School Goals]] | Created note — school list with dream/reach/likely tiers, full admissions stats for all schools, honest assessment by LSAT score range |
 | 18 | 2026-06-06 | — | — | EDT | [[Law School Goals]] | Updated Probable/Most Likely tier with real stats — added Penn State Dickinson, Duquesne, Villanova, UConn; added Safety Schools section with Widener, NYLS, Drexel |
 | 19 | 2026-06-06 | — | — | EDT | [[LSAT Key Concepts & Terminology]] | Created note — conditional logic, sufficient/necessary conditions, quantifier logic, argument structure terms, common flaws, negation test, signal words master list |
+| 20 | 2026-06-08 | — | — | EDT | [[Practice Test Log]] | Added Drill Set 1 LR results (3/12, 25%) — full question breakdown, error pattern analysis, scope creep identified as primary issue |
+| 21 | 2026-06-08 | — | — | EDT | [[AI Opinions]] | Added Chat entry (Jun 8) — scope problem analysis, Assumptions gap, Q11 B vs E breakdown, highlighter technique |
 
 | 14 | 2026-06-06 | 07:32:05 PM | 19:32:05 | EDT | LR - Timing Strategy.md | CREATED — pacing system, skip rules, 2-min hard stop, benchmark table |
 | 15 | 2026-06-06 | 07:32:05 PM | 19:32:05 | EDT | Vocabulary Log.md | CREATED — starter words, categories (Law/Science/LR/Social Science), pattern tracker |
