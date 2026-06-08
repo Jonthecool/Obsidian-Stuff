@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "LSAT Prep/LSAT Key Concepts & Terminology.md",
+                "file": "LSAT Prep/Practice Test Log.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "LSAT Key Concepts & Terminology"
+              "title": "Practice Test Log"
             }
           },
           {
@@ -180,13 +180,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "LSAT Prep/LSAT Key Concepts & Terminology.md",
+                "file": "LSAT Prep/Practice Test Log.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of LSAT Key Concepts & Terminology"
+              "title": "Outline of Practice Test Log"
             }
           }
         ],
@@ -211,6 +211,8 @@
   },
   "active": "30b6b76b8410e35e",
   "lastOpenFiles": [
+    "LSAT Prep/Update Log.md",
+    "LSAT Prep/AI Opinions.md",
     "LSAT Prep/LSAT Key Concepts & Terminology.md",
     "LSAT Prep/Error Log.md",
     "build.js.tmp.52736.1220ca3153b7",
@@ -218,9 +220,7 @@
     "src/style.css",
     "src",
     "LSAT Prep Hub]], [[LR - Argument Structure]], [[LR - Question Types]], [[LR - Common Flaws.md",
-    "LSAT Prep/Update Log.md",
     "LSAT Prep/Weekly Review.md",
-    "LSAT Prep/AI Opinions.md",
     "LSAT Prep/Vocabulary Log.md",
     "build.js.tmp.52736.d530ed7f0051",
     "build.js.tmp.52736.e45c7a6c3462",
