@@ -33,6 +33,8 @@ related: "[[LSAT Prep Hub]]"
 | 19 | 2026-06-06 | — | — | EDT | [[LSAT Key Concepts & Terminology]] | Created note — conditional logic, sufficient/necessary conditions, quantifier logic, argument structure terms, common flaws, negation test, signal words master list |
 | 20 | 2026-06-08 | — | — | EDT | [[Practice Test Log]] | Added Drill Set 1 LR results (3/12, 25%) — full question breakdown, error pattern analysis, scope creep identified as primary issue |
 | 21 | 2026-06-08 | — | — | EDT | [[AI Opinions]] | Added Chat entry (Jun 8) — scope problem analysis, Assumptions gap, Q11 B vs E breakdown, highlighter technique |
+| 22 | 2026-06-09 | — | — | EDT | [[Practice Test Log]] | Added study session entry — Jack's book pages 12-14, contrapositive retained, translation rules still need drilling |
+| 23 | 2026-06-09 | — | — | EDT | [[AI Opinions]] | Added Chat entry (Jun 9) — activation pattern, contrapositive retention, page 14 drilling plan |
 
 | 14 | 2026-06-06 | 07:32:05 PM | 19:32:05 | EDT | LR - Timing Strategy.md | CREATED — pacing system, skip rules, 2-min hard stop, benchmark table |
 | 15 | 2026-06-06 | 07:32:05 PM | 19:32:05 | EDT | Vocabulary Log.md | CREATED — starter words, categories (Law/Science/LR/Social Science), pattern tracker |

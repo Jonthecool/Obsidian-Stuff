@@ -276,3 +276,37 @@ Supported, Paradox, Disagree, Flaw, Necessary Assumption, Conclusion, Flaw, Nece
 - Read all 12 explanations in full
 - Read Jack's book Stage 1 on argument structure before next drill set
 - Priority question types to study: Assumptions, Scope/Inference rules, Flaw identification
+
+---
+
+### Study Session — Jack's Book Pages 12-14 (June 9, 2026)
+- **Date:** June 9, 2026
+- **Source:** LSATwithJack Complete Guide — Pages 12-14
+- **Session type:** Reading + active note-taking
+- **Duration:** ~10-20 minutes of actual work (session started late, ~last 60 mins of day)
+- **Adderall:** Yes, taken at 10am (XR), studied later in afternoon
+
+**Pages covered:**
+- **Page 12 — LSAT Logic:** Conditional logic basics, X → Y format, sufficient vs necessary conditions introduced
+- **Page 13 — Contrapositives:** Swap then negate, X → Y becomes ~Y → ~X, negation warning (not good ≠ bad, just not good)
+- **Page 14 — Logic Translation Rules:** Four rules for converting LSAT language into If/Then format
+
+**What was retained:**
+- Page 13 content memorized without looking back — contrapositive concept internalized
+- Page 14 translation rules still need drilling — trigger word lists not yet memorized cold
+
+**Active work done:**
+- Wrote own contrapositive/negation example in notebook using Walter (X) and Stewie (Y)
+- Example correctly demonstrated contrapositive and negation concept
+- Minor error in original example: last sentence was a mistaken negation (~X → ~Y) rather than valid inference — caught and corrected in review
+
+**Error patterns noted:**
+- Wrote "contraceptive" instead of "contrapositive" repeatedly — needs correction before it becomes habit
+
+**Key takeaway:**
+Short but genuine session. Active writing and example creation more valuable than passive reading. Retention of page 13 without reference is a positive sign. Page 14 translation rules are next memorization target.
+
+**Next steps:**
+- Write out all 4 Logic Translation Rules from memory, check against page 14, repeat until cold
+- Continue to pages 15-19 (Logic Translations Practice) next session
+- Gym + studying tomorrow, Adderall at 10am

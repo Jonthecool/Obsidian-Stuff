@@ -173,3 +173,21 @@ Using the LawHub highlighter as a pencil-tracing substitute is a good adaptation
 The 25% drill score combined with the 43% diagnostic and the 68% asterisked blind review paints a consistent picture: reasoning instincts are present, conceptual framework is missing, scope discipline needs work. Stage 1 of Jack's book is the correct next move before more drilling. The data is clear enough to work from.
 
 *Chat opinions added: 2026-06-08*
+
+---
+
+## 2026-06-09 | Chat
+
+### On today's session
+10-20 minutes of genuine active work is a thin session but not a worthless one. Writing your own Walter/Stewie example and retaining page 13 without looking back shows the material is actually landing when you engage with it actively. The problem isn't ability — it's activation. Studying happened in the last hour of the day again, which is a pattern worth breaking. The Adderall window was largely wasted today.
+
+### On the contrapositive retention
+Memorizing page 13 after one read without needing to look back is genuinely good. The concept clicked. The Walter/Stewie example was structurally correct on the contrapositive and negation — the only slip was the last sentence being a mistaken negation, which was caught and corrected. That self-correction matters more than the initial error.
+
+### On page 14 translation rules
+These are the next bottleneck. Four rules, trigger word lists, needs to be cold recall not recognition. Recognition (seeing the rule and knowing it's right) is much weaker than recall (writing it out from memory). Drilling these by writing them out repeatedly without looking is the correct method. This should be the first thing done tomorrow after Adderall kicks in, before anything else.
+
+### On the pattern
+Gym skipped today. Studying pushed to the last hour. These are the same avoidance patterns identified earlier. The plan for tomorrow is clear: Adderall at 10am, open Jack's book before anything else, gym at some point in the day. The conditions are always going to be there — the decision to start is the only variable.
+
+*Chat opinions added: 2026-06-09*
