@@ -18,6 +18,10 @@
 
 ---
 
+| **Omega-3 (Nutricost)**             | 1,200mg EPA + 850mg DHA per serving (3 softgels). Brain cell membrane support, mood (EPA), anti-inflammatory, cardiovascular. Take with a fat-containing meal. 1–2 softgels still a strong dose if stretching the bottle. **Replaces the Nature Made gummies** (only 57mg EPA/DHA — badly underdosed, demoted to emergency backup; sugar cost too high at an effective dose). Slow build over weeks/months. |
+| **Saffron (Nutricost, 88.5mg)**     | Mood support — well-dosed within the studied 30–90mg range, evidence comparable to low-dose antidepressants for mild low mood. Mild anxiety benefit. Works on serotonin/dopamine pathways. Takes 2–4 weeks to notice. Take consistently. Narrow/specialized — mood only, not a focus or ADHD aid. |
+| **Bacopa Monnieri (1,000mg, 50% bacosides)** | Memory and learning — one of the better-evidenced cognitive supplements; human trials show improved retention and learning speed. Mild anxiety reduction. **Slow: 8–12 weeks of daily use to notice.** Take with food (fat-soluble, GI upset on empty stomach). Mildly sedating for some — evening dosing is an option if it makes you tired. |
+
 ## As Needed — 30-45 Min Before Studying or Stressful Moments
 
 | Supplement | Why I Take It |
@@ -112,8 +116,14 @@
 
 ---
 
+| Mood support | Saffron |
+| Brain / anti-inflammatory (omega-3) | Omega-3 (Nutricost) |
+| Memory & learning (slow build) | Bacopa Monnieri |
+
 ## Possible Future Additions
 - **Tyrosine (NALT)** — dopamine precursor, helps with procrastination and task initiation (ADHD)
 - **B-Complex** — essential for neurotransmitter production
-- **Omega-3 high EPA** — mood and brain inflammation
 - **Protein + electrolytes** — post workout recovery
+- **Collagen peptides (20g)** — connective tissue/joint support; take with vitamin C (have it, just not logged as essential)
+
+*Omega-3 high EPA — DONE, now in the daily stack (Nutricost).*
