@@ -191,3 +191,26 @@ These are the next bottleneck. Four rules, trigger word lists, needs to be cold 
 Gym skipped today. Studying pushed to the last hour. These are the same avoidance patterns identified earlier. The plan for tomorrow is clear: Adderall at 10am, open Jack's book before anything else, gym at some point in the day. The conditions are always going to be there — the decision to start is the only variable.
 
 *Chat opinions added: 2026-06-09*
+
+---
+
+## 2026-06-27 | 12:00:00 AM / 00:00:00 EDT | Cowork — Week 4 Automated Saturday Review
+
+### On the week as a whole
+Nothing logged for June 20–26. No sessions, no practice test, no note updates. The last entry across any prep log is June 9 — Jack's book pages 12–14, described as 10–20 minutes of actual work done in the last hour of the day. That was 18 days ago.
+
+The early weeks told a specific story: a concentrated burst of real effort in Week 1 (diagnostic, blind review, first drill set), continued through June 6–9 with the error log, drill set analysis, and Jack's book introduction, then silence. Three blank weeks in a row. Weeks 2, 3, and 4 have no activity documented.
+
+### On what the silence actually means
+There are two possible explanations. Either Jon studied and didn't log it, or Jon didn't study. The logging infrastructure he built is detailed and consistent — every session, every blind review, every book page was documented in real time up through June 9. A sudden logging failure across 18 days is less likely than a genuine pause. Based on the evidence, this reads as a pause in prep.
+
+### On the timeline cost
+June was identified on multiple occasions — including in Jon's own law school goals note and in prior Cowork entries — as one of the two highest-leverage months before November. June is now over in four days. The score gap between a 142 and a 170 requires consistent, compounding work over months. An 18-day gap this early in the timeline doesn't eliminate the 170 target, but it costs time that doesn't come back. The runway is shorter now.
+
+### On what Week 1 established
+The Week 1 work was real and worth acknowledging. The diagnostic was legitimate. The blind review sessions showed a genuine comprehension gap above the timed floor. The drill set gave clean, unassisted data. The note infrastructure is well-designed. None of that disappears because June went quiet. But it also doesn't compound without continued reps. The foundation is there — it's just been sitting unused.
+
+### On what happens next
+If prep resumes in July with the same intensity as Week 1, there's still a credible path to significant score improvement by November. The conceptual gaps identified in June — Assumptions, scope discipline, Flaw speed, Techniques/Roles/Principles — are all still there waiting to be addressed. Jack's book pages 15–19 (Logic Translations Practice) was the assigned next step on June 9. It hasn't been done yet.
+
+*Automated entry — Cowork weekly review, 2026-06-27 00:00:00 EDT*
