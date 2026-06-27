@@ -41,3 +41,4 @@ related: "[[LSAT Prep Hub]]"
 | 16 | 2026-06-06 | 07:32:05 PM | 19:32:05 | EDT | LR - Pre-Question Protocol.md | CREATED — 4-step protocol: stem first, conclusion/premises, gap, pre-phrase |
 
 | 17 | 2026-06-06 | 07:45:00 PM | 19:45:00 | EDT | Vocabulary Log.md | MAJOR EXPANSION — 125+ words added across 7 categories: Reasoning Verbs, Describing Arguments, Logic & Inference, Change & Scale, Law & Governance, Philosophy/Social Science, Economics. Added Commonly Confused Pairs section. Words sourced by scanning The LSAT Trainer + The Loophole. |
+| 24 | 2026-06-27 | 12:00:00 AM | 00:00:00 | EDT | [[Weekly Review]], [[AI Opinions]] | Automated Saturday midnight review — Week 4 (Jun 20–26). Zero logged activity for the week. Filled Cowork effort + motivation fields with honest assessment of 18-day gap since June 9. Added Week 4 entry to AI Opinions. |

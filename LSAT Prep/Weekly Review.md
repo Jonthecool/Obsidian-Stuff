@@ -115,9 +115,9 @@ Finish blind review of LR sections from diagnostic. Begin drilling LR question s
 
 **Energy/motivation level (1–10):**
 
-**"Cowork"'s assessment of effort this week:**
+**"Cowork"'s assessment of effort this week:** Nothing logged. No sessions, no practice test, no note updates for the entire week of June 20–26. The last recorded activity in any prep log is June 9 — an 18-day gap. This is Week 4 of a prep plan that identified June and July as its highest-leverage months.
 
-**"Cowork"'s opinion on energy/motivation:**
+**"Cowork"'s opinion on energy/motivation:** Can't read motivation from silence. Three consecutive blank weeks after a strong Week 1 is a pattern. The diagnostic, blind reviews, and first drill set happened in a concentrated burst, then stopped. Whether that's burnout, summer drift, or life getting in the way is unclear — but the documentation says nothing happened, and documentation has been reliable up to this point.
 
 ---
 
